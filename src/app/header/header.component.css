@@ -1,0 +1,50 @@
+header{
+	padding: 30px 0;
+}
+.search-img{
+	width: 20px;
+}
+.p-hamburger{
+	cursor: pointer;
+}
+.p-hamburger span{
+	width: 20px;
+	height: 3px;
+	background-color: #000;
+	display: block;
+	margin-bottom: 4px;
+}
+.p-hamburger span:last-child{
+	margin-bottom: 0px;
+}
+.p-hamburger span:nth-child(2){
+	width: 10px;
+}
+header ul{
+	display: flex;
+	align-items: center;
+}
+header ul li{
+	padding: 0px 40px;
+}
+header ul li:first-child{
+	padding-left: 0px;
+}
+header ul li:last-child{
+	padding-right: 0px;
+}
+header ul li a{
+	color: #000;
+	font-weight:500;
+	position: relative;
+}
+header ul li a:hover::after, header ul li a.is-active::after{
+	content:"";
+	background-color: var(--background-color-green);
+	height: 3px;
+	position: absolute;
+	left: 0px;
+	z-index: -1;
+	bottom: 0px;
+	right: 0px;
+}

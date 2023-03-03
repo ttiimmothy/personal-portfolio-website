@@ -1,0 +1,66 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+:root{
+	--background-color-green: #198754;
+}
+body{
+	margin: 0px;
+	padding: 0px;
+	font-size: 17px;
+}
+p{
+	margin: 0px;
+}
+ul{
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
+a,a:hover{
+	text-decoration: none;
+	color: #000;
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight: 700;
+}
+h1{
+	font-size: 45px;
+}
+.col-sm-6{
+	width: 75% !important;
+}
+/* Common */
+.p-cursor{
+	cursor: pointer;
+}
+.p-flex{
+	display: flex;
+}
+.p-flex-align-center{
+	align-items: center;
+}
+.p-flex-justify-content-sb{
+	justify-content: space-between;
+}
+.p-readmore{
+	font-weight: 600;
+}
+.p-readmore img{
+	transition: all .5s;
+	transform: translateX(0);
+}
+.p-readmore:hover img{
+	transform: translateX(5px);
+}
+/* Wrapper class */
+.p-wrapper{
+	position: relative;
+}
+.p-wrapper::before{
+	content: "";
+	background-color: var(--background-color-green);
+	height: 100vh;
+	width: 25vw;
+	position: absolute;
+	z-index: -1;
+}

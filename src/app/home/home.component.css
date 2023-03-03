@@ -1,0 +1,48 @@
+.p-profile{
+	background: url(/assets/img/mhwBnbaro.png);
+	width: 100%;
+	height: 500px;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.p-rgt-sec{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.read-more-img{
+	width: 15px;
+}
+.p-tag{
+	background-color: #989898;
+	color: #fff;
+	padding: 5px 10px;
+	font-size: 15px;
+}
+.p-desc{
+	color: #acacac;
+	width: 80%;
+}
+.subscribe-form{
+	box-shadow: 1px 2px 12px 1px #0003;
+	width: 80%;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+form .form-control{
+	min-height: 60px;
+	padding: 10px 20px;
+	border-radius: 0px;
+	border: 0px;
+	outline: none;
+	box-shadow: none;
+	background-color: #fff;
+}
+form .btn-warning{
+	min-height: 60px;
+	border: 0px;
+	border-radius: 0px;
+	/* padding: 10px 35px; */
+	font-weight: 500;
+}
