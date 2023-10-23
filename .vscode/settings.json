@@ -1,0 +1,15 @@
+{
+  "cSpell.words": [
+    "drei",
+    "frameloop",
+    "nextjs",
+    "nextlint",
+    "Nuxt",
+    "tailwindcss",
+    "tsbuildinfo",
+    "vercel"
+  ],
+  "files.associations": {
+    "*.css": "tailwindcss"
+  }
+}

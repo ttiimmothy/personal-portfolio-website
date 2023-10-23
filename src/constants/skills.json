@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Frontend",
+    "stacks": ["React", "Next.js", "@redux/toolkit", "Vue"]
+  },
+  {
+    "title": "Backend Development",
+    "stacks": ["Node.js", "Express", "Spring Boot", "Dotnet"]
+  },
+  {
+    "title": "Database Management",
+    "stacks": ["Postgresql", "MySQL", "MongoDB"]
+  },
+  {
+    "title": "Cloud and Infrastructure",
+    "stacks": ["AWS", "Docker", "Kubernetes", "Github Actions"]
+  },
+  {
+    "title": "Language",
+    "stacks": ["Cantonese", "English", "Mandarin"]
+  }
+]

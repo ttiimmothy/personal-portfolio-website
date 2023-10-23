@@ -1,0 +1,38 @@
+[
+  {
+    "name": "CSS3",
+    "icon": "css"
+  },
+  {
+    "name": "JavaScript",
+    "icon": "javascript"
+  },
+  {
+    "name": "TypeScript",
+    "icon": "typescript"
+  },
+  {
+    "name": "React",
+    "icon": "react"
+  },
+  {
+    "name": "@redux/toolkit",
+    "icon": "redux"
+  },
+  {
+    "name": "C Sharp",
+    "icon": "csharp"
+  },
+  {
+    "name": "MongoDB",
+    "icon": "mongodb"
+  },
+  {
+    "name": "git",
+    "icon": "git"
+  },
+  {
+    "name": "docker",
+    "icon": "docker"
+  }
+]
