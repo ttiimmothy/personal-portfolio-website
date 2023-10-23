@@ -8,7 +8,7 @@ const nextConfig = {
           {
             key: "Content-Security-Policy",
             value:
-              "default-src 'self'; img-src 'self' vitals.vercel-insights.com; script-src 'self' 'unsafe-inline'",
+              "default-src 'self'; connect-src 'self' vitals.vercel-insights.com;",
           },
         ],
       },
