@@ -7,8 +7,7 @@ const nextConfig = {
         headers: [
           {
             key: "Content-Security-Policy",
-            value:
-              "default-src 'self'; img-src 'self' vitals.vercel-insights.com; script-src 'self' 'unsafe-inline'",
+            value: "connect-src 'self' vitals.vercel-insights.com;",
           },
         ],
       },
