@@ -105,7 +105,16 @@ const ProjectCard: React.FC<{ project: Project; index: number }> = ({
       <div className="flex flex-col gap-2 p-4">
         <p className="text-xl font-semibold">{project.name}</p>
         <p className="text-sm text-gray-600">{project.description}</p>
-        <div className="absolute bottom-16 flex items-center gap-2">
+        <div className="absolute bottom-16 flex gap-4">
+          {project.stacks.map((stack, index) => (
+            <ProjectStack
+              stack={stack}
+              key={index}
+              link={project.stackLinks[stack]}
+            />
+          ))}
+        </div>
+        <div className="absolute bottom-4 flex items-center gap-2">
           {project.originLink && (
             <Link
               href={project.originLink}
@@ -125,15 +134,6 @@ const ProjectCard: React.FC<{ project: Project; index: number }> = ({
               Source Code
             </Link>
           )}
-        </div>
-        <div className="absolute bottom-4 flex gap-4">
-          {project.stacks.map((stack, index) => (
-            <ProjectStack
-              stack={stack}
-              key={index}
-              link={project.stackLinks[stack]}
-            />
-          ))}
         </div>
       </div>
     </motion.div>
