@@ -1,59 +1,99 @@
 [
   {
-    "title": "React.js Developer",
-    "company_name": "Starbucks",
-    "icon": "starbucks",
-    "iconBg": "#383E56",
-    "date": "March 2020",
+    "title": "Civil Engineer",
+    "company_name": "Atkins",
+    "company_url": "https://www.atkinsrealis.com/",
+    "icon": "atkins",
+    "iconBg": "#fff",
+    "date": "Jul 2018",
     "points": [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers."
+      "Designed and made modifications for the bored piles system of Prince of Wales Hospital Re-development Phase 2 Stage 1",
+      "Designed drainage systems for Sha Tin Wai Road in Hong Kong"
     ]
   },
   {
-    "title": "React Native Developer",
-    "company_name": "Tesla",
-    "icon": "tesla",
+    "title": "Graduation",
+    "company_name": "HKUST",
+    "company_url": "https://hkust.edu.hk/",
+    "icon": "hkust",
+    "iconBg": "#FFFDD0",
+    "date": "Aug 2018",
+    "points": ["Officially Graduated"]
+  },
+  {
+    "title": "Bridge Engineer",
+    "company_name": "Meinhardt",
+    "company_url": "https://meinhardtgroup.com/",
+    "icon": "meinhardt",
+    "iconBg": "#D8F3FA",
+    "date": "Nov 2019",
+    "points": [
+      "Designed and made modifications for the bored pile system of a church located in Hong Kong Island",
+      "Designed several hoardings for different construction sites",
+      "Designed the cover for pedestrian covered walkway next to a primary school in Kowloon"
+    ]
+  },
+  {
+    "title": "Changing the path",
+    "company_name": "Tecky Academy",
+    "company_url": "https://www.tecky.io/",
+    "icon": "tecky",
+    "iconBg": "#CEFAD8",
+    "date": "Feb 2021",
+    "points": [
+      "Learnt all the things required to become a software engineer",
+      "Collaborated with other members in an agile environment with scrum master",
+      "Participating in code reviews and providing constructive feedback to other members"
+    ]
+  },
+  {
+    "title": "Backend Developer",
+    "company_name": "Ecosa",
+    "company_url": "https://www.ecosa.com/",
+    "icon": "ecosa",
+    "iconBg": "#10318E",
+    "date": "Jun 2021",
+    "points": [
+      "Improved the search function performance in CMS to reduce the SQL query execution time by database by 40%",
+      "Developed a notification function for weekly shipments in Slack to keep track on stock capacity",
+      "Troubleshot and optimized the SQL queries to solve the Unicode standard issues in the Japanese CMS system"
+    ],
+    "highlights": [
+      "Learnt PHP without any prior PHP experiences and finished the CMS system modifications"
+    ]
+  },
+  {
+    "title": "Software Developer",
+    "company_name": "Cable Television",
+    "company_url": "https://www.i-cable.com/",
+    "icon": "cable",
     "iconBg": "#E6DEDD",
-    "date": "Jan 2021",
+    "date": "Aug 2021",
     "points": [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers."
+      "Designed and developed a new company website with Figma and Next.js",
+      "Deployed a website on AWS for better maintenance and cost reductions",
+      "Performed Search Engine Optimization of the company website, and utilized CMS system to increase tracking accuracy by 60%",
+      "Redesigned the company mobile app with React Native and GraphQL to increase data customization for app rendering by 80%"
     ]
   },
   {
-    "title": "Web Developer",
-    "company_name": "Shopify",
-    "icon": "shopify",
-    "iconBg": "#383E56",
-    "date": "Jan 2022",
+    "title": "Software Engineer",
+    "company_name": "Storeforce",
+    "company_url": "https://storeforcesolutions.com/",
+    "icon": "storeforce",
+    "iconBg": "#D8F3FA",
+    "date": "Aug 2022",
     "points": [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers."
-    ]
-  },
-  {
-    "title": "Full stack Developer",
-    "company_name": "Meta",
-    "icon": "meta",
-    "iconBg": "#E6DEDD",
-    "date": "Jan 2023",
-    "points": [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers."
+      "Increased the speed of getting data from database in the store auditing page by 90%",
+      "Rewrote the SQL queries to enhance the performance of the app by getting more than 100% improvement in the loading speed",
+      "Added new features (like filtering and employee borrowing) in one of the retail solutions (the retail dashboard)",
+      "Cooperated with backend developers on changing the web APIs to headless APIs and DevOps developers to update the app daily in an agile environment"
     ]
   },
   {
     "title": "To Be Continued",
     "company_name": "",
+    "company_url": "",
     "icon": "",
     "iconBg": "",
     "date": "Now",

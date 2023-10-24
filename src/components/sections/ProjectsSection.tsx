@@ -7,7 +7,55 @@ import { motion } from "framer-motion";
 import { fadeIn, textVariant } from "@/components/utils/motions";
 import { styles } from "@/components/utils/styles";
 import { Project } from "@/interface/Project";
-import { personal_website, task_manager, ttc_refractor } from "@/assets";
+import {
+  fluentui,
+  next,
+  personal_website,
+  react,
+  reactrouter,
+  redux,
+  tailwind,
+  task_manager,
+  ttc_refractor,
+  vite,
+} from "@/assets";
+
+const ProjectStack: React.FC<{ stack: string }> = ({ stack }) => {
+  let stackImage;
+  switch (stack) {
+    case "react":
+      stackImage = react;
+      break;
+    case "tailwind":
+      stackImage = tailwind;
+      break;
+    case "vite":
+      stackImage = vite;
+      break;
+    case "fluentui":
+      stackImage = fluentui;
+      break;
+    case "redux":
+      stackImage = redux;
+      break;
+    case "reactrouter":
+      stackImage = reactrouter;
+      break;
+    case "next":
+      stackImage = next;
+      break;
+  }
+
+  return (
+    <Image
+      src={stackImage}
+      alt="stack"
+      width={20}
+      height={20}
+      className="h-[28px] w-auto object-cover"
+    />
+  );
+};
 
 const ProjectCard: React.FC<{ project: Project; index: number }> = ({
   project,
@@ -30,7 +78,7 @@ const ProjectCard: React.FC<{ project: Project; index: number }> = ({
     <motion.div
       variants={fadeIn("up", "spring", index * 0.5, 0.75)}
       key={project.name}
-      className="relative border-2 border-gray-100 rounded-lg shadow-xl min-h-[340px]"
+      className="relative border-2 border-gray-100 rounded-lg shadow-xl min-h-[380px]"
     >
       {projectImage && (
         <Image
@@ -41,11 +89,10 @@ const ProjectCard: React.FC<{ project: Project; index: number }> = ({
           className="h-[160px] w-full object-cover rounded-tl-lg rounded-tr-lg"
         />
       )}
-
       <div className="flex flex-col gap-2 p-4">
         <p className="text-xl font-semibold">{project.name}</p>
         <p className="text-sm text-gray-600">{project.description}</p>
-        <div className="absolute bottom-4 flex items-center gap-2">
+        <div className="absolute bottom-16 flex items-center gap-2">
           {project.originLink && (
             <Link
               href={project.originLink}
@@ -66,6 +113,11 @@ const ProjectCard: React.FC<{ project: Project; index: number }> = ({
             </Link>
           )}
         </div>
+        <div className="absolute bottom-4 flex gap-4">
+          {project.stacks.map((stack, index) => (
+            <ProjectStack stack={stack} key={index} />
+          ))}
+        </div>
       </div>
     </motion.div>
   );
@@ -73,7 +125,7 @@ const ProjectCard: React.FC<{ project: Project; index: number }> = ({
 
 const ProjectsSection: React.FC = () => {
   return (
-    <div className="min-h-[90vh]">
+    <div>
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} text-center`}>
           Some Projects that I&apos;ve Built

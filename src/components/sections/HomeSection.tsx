@@ -1,14 +1,15 @@
 import { motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
 import roles from "@/constants/roles.json";
+import Link from "next/link";
 
 const HomeSection: React.FC = () => {
-  const scrollTo = (id: string) => {
-    if (document.getElementById(id) === null) {
-      return;
-    }
-    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
-  };
+  // const scrollTo = (id: string) => {
+  //   if (document.getElementById(id) === null) {
+  //     return;
+  //   }
+  //   document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+  // };
 
   return (
     <section id="home" className="relative h-screen flex items-center">
@@ -36,19 +37,21 @@ const HomeSection: React.FC = () => {
       <div className="absolute bottom-20 lg:bottom-28 mt-40 w-full flex justify-center">
         <button
           type="button"
-          onClick={() => scrollTo("about")}
+          // onClick={() => scrollTo("about")}
           className="flex justify-center w-8 h-16 border-2 border-[#808080] dark:border-white rounded-full p-1"
         >
-          <motion.div
-            animate={{ y: [0, 40], opacity: [1, 0] }}
-            transition={{
-              ease: "easeIn",
-              repeat: Infinity,
-              duration: 1,
-              repeatDelay: 0.5,
-            }}
-            className="w-4 h-4 bg-secondary dark:bg-white rounded-full"
-          />
+          <Link href="/#about">
+            <motion.div
+              animate={{ y: [0, 40], opacity: [1, 0] }}
+              transition={{
+                ease: "easeIn",
+                repeat: Infinity,
+                duration: 1,
+                repeatDelay: 0.5,
+              }}
+              className="w-4 h-4 bg-secondary dark:bg-white rounded-full"
+            />
+          </Link>
         </button>
       </div>
     </section>

@@ -29,10 +29,10 @@ export function Navbar(): JSX.Element {
 
   const NavButton = ({ id, label }: { id: string; label: string }) => {
     const scrollTo = () => {
-      // if (document.getElementById(id) == null) {
-      //   return;
-      // }
-      // document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+      if (document.getElementById(id) == null) {
+        return;
+      }
+      document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
       setShowMobileMenu(false);
     };
 
@@ -60,6 +60,7 @@ export function Navbar(): JSX.Element {
           <NavButton id="about" label="About" />
           <NavButton id="experience" label="Experience" />
           <NavButton id="projects" label="Projects" />
+          <NavButton id="contact" label="Contact" />
         </div>
       )}
       <nav
@@ -73,6 +74,7 @@ export function Navbar(): JSX.Element {
             <NavButton id="about" label="About" />
             <NavButton id="experience" label="Experience" />
             <NavButton id="projects" label="Projects" />
+            <NavButton id="contact" label="Contact" />
           </div>
           <div className="invisible lg:visible absolute right-0 flex items-center gap-2">
             <Link
@@ -108,7 +110,7 @@ export function Navbar(): JSX.Element {
       >
         <div className="relative w-[90vw] mx-auto py-4 flex items-center justify-between">
           <div className="dark:text-white">
-            <NavButton id="home" label="Timothy Li" />
+            <NavButton id="home" label="Timothy" />
           </div>
           <button
             className="relative p-2 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-md inline-flex items-center cursor-pointer"

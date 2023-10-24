@@ -4,7 +4,15 @@ import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
-import { meta, shopify, starbucks, tesla } from "@/assets";
+import {
+  hkust,
+  atkins,
+  meinhardt,
+  ecosa,
+  tecky,
+  cable,
+  storeforce,
+} from "@/assets";
 import { motion } from "framer-motion";
 import { textVariant } from "../utils/motions";
 import { styles } from "../utils/styles";
@@ -12,23 +20,33 @@ import experiences from "@/constants/experiences.json";
 import SectionWrapper from "@/components/layout/SectionWrapper";
 
 import "react-vertical-timeline-component/style.min.css";
+import Link from "next/link";
 
 const ExperienceCard: React.FC<{ experience: Experience }> = ({
   experience,
 }) => {
   let companyIcon;
   switch (experience.icon) {
-    case "meta":
-      companyIcon = meta;
+    case "hkust":
+      companyIcon = hkust;
       break;
-    case "shopify":
-      companyIcon = shopify;
+    case "atkins":
+      companyIcon = atkins;
       break;
-    case "starbucks":
-      companyIcon = starbucks;
+    case "meinhardt":
+      companyIcon = meinhardt;
       break;
-    case "tesla":
-      companyIcon = tesla;
+    case "ecosa":
+      companyIcon = ecosa;
+      break;
+    case "tecky":
+      companyIcon = tecky;
+      break;
+    case "cable":
+      companyIcon = cable;
+      break;
+    case "storeforce":
+      companyIcon = storeforce;
       break;
   }
 
@@ -62,22 +80,35 @@ const ExperienceCard: React.FC<{ experience: Experience }> = ({
           {experience.title}
         </h3>
         {experience.company_name && (
-          <p className="text-secondary text-[16px] font-semibold m-0">
-            {experience.company_name}
-          </p>
+          <Link href={experience.company_url} target="_blank">
+            <p className="text-secondary text-[16px] font-semibold tw-m-0 hover:text-secondary-hover">
+              {experience.company_name}
+            </p>
+          </Link>
         )}
       </div>
       {experience.points.length > 0 && (
-        <ul className="mt-5 list-disc ml-5 space-y-2">
+        <ul
+          className={`mt-5 list-disc ${
+            experience.points.length > 1 && "ml-5"
+          } space-y-2`}
+        >
           {experience.points.map((point, index) => (
             <li
               key={`experience-point-${index}`}
-              className="text-gray-800 text-[14px] pl-1 tracking-wider"
+              className={`text-gray-800 text-[14px] ${
+                experience.points.length > 1 && "pl-1"
+              } ${experience.points.length === 1 && "list-none"}`}
             >
               {point}
             </li>
           ))}
         </ul>
+      )}
+      {experience.highlights && (
+        <div className="text-secondary text-[14px] font-semibold mt-4">
+          {experience.highlights}
+        </div>
       )}
     </VerticalTimelineElement>
   );
