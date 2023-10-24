@@ -1,16 +1,20 @@
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import {
-  IoClose,
+  // IoClose,
   IoLogoGithub,
   IoLogoLinkedin,
-  IoMenuOutline,
+  // IoMenuOutline,
 } from "react-icons/io5";
 import { BiSolidFilePdf } from "react-icons/bi";
+import { NavMobileMenuIcon } from "@/components/layout/navMobileMenu/NavMobileMenuIcon";
+import { Helmet } from "react-helmet";
+import useOnClickOutside from "@/components/hooks/useOnClickOutside";
 
 export function Navbar(): JSX.Element {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const wrapperRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,17 +26,29 @@ export function Navbar(): JSX.Element {
       }
     };
 
-    window.addEventListener("scroll", handleScroll);
+    const onResize = (e: any) => {
+      if (e.currentTarget.innerWidth > 1024) {
+        setShowMobileMenu(false);
+      }
+    };
 
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("resize", onResize);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", onResize);
+    };
   }, []);
+
+  useOnClickOutside(wrapperRef, () => setShowMobileMenu(false));
 
   const NavButton = ({ id, label }: { id: string; label: string }) => {
     const scrollTo = () => {
-      // if (document.getElementById(id) == null) {
-      //   return;
-      // }
-      // document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+      if (document.getElementById(id) == null) {
+        return;
+      }
+      document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
       setShowMobileMenu(false);
     };
 
@@ -54,14 +70,9 @@ export function Navbar(): JSX.Element {
 
   return (
     <>
-      {showMobileMenu && (
-        <div className="fixed top-0 left-0 h-screen w-screen flex justify-center items-center flex-col bg-white dark:bg-[#27374D] gap-4 z-40">
-          <NavButton id="home" label="Home" />
-          <NavButton id="about" label="About" />
-          <NavButton id="experience" label="Experience" />
-          <NavButton id="projects" label="Projects" />
-        </div>
-      )}
+      <Helmet>
+        <body className={showMobileMenu ? "blurring" : ""} />
+      </Helmet>
       <nav
         className={`invisible lg:visible fixed top-0 left-0 w-full flex justify-center bg-slate-50 px-5 z-40 ${
           scrolled && "shadow-lg opacity-90"
@@ -73,6 +84,7 @@ export function Navbar(): JSX.Element {
             <NavButton id="about" label="About" />
             <NavButton id="experience" label="Experience" />
             <NavButton id="projects" label="Projects" />
+            <NavButton id="contact" label="Contact" />
           </div>
           <div className="invisible lg:visible absolute right-0 flex items-center gap-2">
             <Link
@@ -100,23 +112,36 @@ export function Navbar(): JSX.Element {
         </div>
       </nav>
       <nav
-        className={`visible lg:invisible fixed top-0 left-0 w-full flex justify-center ${
-          showMobileMenu
-            ? "bg-white"
-            : `bg-slate-50 ${scrolled && "shadow-lg opacity-90"}`
+        className={`visible lg:invisible fixed top-0 left-0 w-full flex justify-center bg-slate-50 ${
+          scrolled && `${!showMobileMenu && "shadow-lg"} opacity-90`
         } px-5 z-40`}
       >
         <div className="relative w-[90vw] mx-auto py-4 flex items-center justify-between">
           <div className="dark:text-white">
-            <NavButton id="home" label="Timothy Li" />
+            <NavButton id="home" label="Timothy" />
           </div>
-          <button
+          {/* <button
             className="relative p-2 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-md inline-flex items-center cursor-pointer"
             onClick={() => setShowMobileMenu(!showMobileMenu)}
           >
             {!showMobileMenu && <IoMenuOutline size={20} />}
             {showMobileMenu && <IoClose size={20} />}
-          </button>
+          </button> */}
+          <div ref={wrapperRef}>
+            <NavMobileMenuIcon
+              toggleMenu={setShowMobileMenu}
+              menuOpen={showMobileMenu}
+            />
+            {showMobileMenu && (
+              <div className="fixed top-0 right-0 h-screen w-aside flex justify-center items-center flex-col bg-slate-50 dark:bg-[#27374D] gap-4 z-50 shadow-aside-width">
+                <NavButton id="home" label="Home" />
+                <NavButton id="about" label="About" />
+                <NavButton id="experience" label="Experience" />
+                <NavButton id="projects" label="Projects" />
+                <NavButton id="contact" label="Contact" />
+              </div>
+            )}
+          </div>
         </div>
       </nav>
     </>

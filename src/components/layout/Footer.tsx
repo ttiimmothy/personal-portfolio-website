@@ -43,7 +43,7 @@ export function Footer(): JSX.Element {
             href="https://github.com/ttiimmothy"
             className="hover:text-gray-200 dark:hover:text-gray-600"
           >
-            Timothy Li
+            Timothy
           </Link>{" "}
           {new Date().getFullYear()}
         </p>

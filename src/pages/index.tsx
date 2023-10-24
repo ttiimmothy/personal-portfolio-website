@@ -2,6 +2,8 @@ import AboutSection from "@/components/sections/AboutSection";
 import HomeSection from "@/components/sections/HomeSection";
 import ExperienceSection from "@/components/sections/ExperienceSection";
 import ProjectsSection from "@/components/sections/ProjectsSection";
+import ContactSection from "@/components/sections/ContactSection";
+import ScrollTop from "@/components/layout/ScrollTop";
 
 export default function Home() {
   return (
@@ -10,6 +12,8 @@ export default function Home() {
       <AboutSection />
       <ExperienceSection />
       <ProjectsSection />
+      <ContactSection />
+      <ScrollTop />
     </main>
   );
 }

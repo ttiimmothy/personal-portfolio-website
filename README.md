@@ -8,13 +8,13 @@ This project is a web application that presents information about me as a softwa
 
 ## Tech Stacks
 
-The project uses the following technologies:
+### The project uses the following technologies
 
-- `React`
-- `Next.js`
-- `Typescript`
-- `Tailwind CSS`
-- `Prettier`
+- **`React`**
+- **`Next.js`**
+- **`Typescript`**
+- **`Tailwind CSS`**
+- **`Prettier`**
 
 ### The project includes the following features
 
@@ -28,6 +28,22 @@ The project uses the following technologies:
 
 - Project Portfolio: Explore a comprehensive overview of my projects. This section dives deep into the projects I've been a part of, elucidating your role, contributions, and the impactful outcomes achieved.
 
+## Inspiration
+
+This project was inspired by some websites. While this project is not a direct continuation of their works, it would not have been possible without their contributions. The websites credited are listed as follow:
+
+<https://martintsang.vercel.app/>
+
+<https://portfolio-website-three-eta.vercel.app/>
+
+<https://hoipangcheung.github.io/>
+
+<https://v4.brittanychiang.com/>
+
+<https://vitochan.com/>
+
+<https://kcwong395.github.io/>
+
 ## License
 
-The project is licensed under the Mozilla Public License Version 2.0.
+The project is licensed under the Apache License 2.0.
