@@ -2,7 +2,7 @@
 import skills from "@/constants/skills.json";
 import SectionWrapper from "@/components/layout/SectionWrapper";
 import { motion } from "framer-motion";
-import { textVariant } from "@/components/utils/motions";
+import { fadeIn, textVariant } from "@/components/utils/motions";
 import { styles } from "@/components/utils/styles";
 import TechnologyBalls from "@/components/bin/TechnologyBalls";
 
@@ -53,7 +53,10 @@ const AboutSection: React.FC = () => {
         <div className="flex flex-wrap gap-7 justify-center">
           <TechnologyBalls />
         </div>
-        <div className="flex flex-col gap-3">
+        <motion.div
+          variants={fadeIn("", "", 0.1, 1)}
+          className="flex flex-col gap-3"
+        >
           <h1 className="text-4xl font-bold">Timothy Li</h1>
           {/* <p className="text-xl font-semibold">A Software Engineer</p> */}
           <p className="my-2  opacity-75 leading-[1.5]">
@@ -69,7 +72,7 @@ const AboutSection: React.FC = () => {
               key={index}
             />
           ))}
-        </div>
+        </motion.div>
       </div>
       {/* </motion.div> */}
     </>
