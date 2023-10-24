@@ -13,6 +13,10 @@ const nextConfig = {
   //     },
   //   ];
   // },
+  // output: "export",
+  // trailingSlash: true,
+  distDir: "dist",
+  // basePath: "/portfolio",
 };
 
 module.exports = nextConfig;
