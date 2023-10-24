@@ -2,10 +2,14 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ttiimmothy.github.io/portfolio",
+  "homepage": "https://ttiimmothy.com",
   "license": "Apache-2.0",
   "author": {
     "name": "Timothy Li"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ttiimmothy/portfolio"
   },
   "scripts": {
     "dev": "next dev --port 3975",
