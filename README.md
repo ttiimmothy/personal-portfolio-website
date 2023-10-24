@@ -10,11 +10,11 @@ This project is a web application that presents information about me as a softwa
 
 ### The project uses the following technologies
 
-- **React**
-- **Next.js**
-- **Typescript**
-- **Tailwind CSS**
-- **Prettier**
+- **`React`**
+- **`Next.js`**
+- **`Typescript`**
+- **`Tailwind CSS`**
+- **`Prettier`**
 
 ### The project includes the following features
 
