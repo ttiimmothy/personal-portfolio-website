@@ -8,7 +8,7 @@ const nextConfig = {
           {
             key: "Content-Security-Policy",
             value:
-              "connect-src 'self' vitals.vercel-insights.com https://vercel.live",
+              "connect-src 'self' vitals.vercel-insights.com https://vercel.live https://api.emailjs.com",
           },
         ],
       },
