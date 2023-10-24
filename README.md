@@ -10,11 +10,11 @@ This project is a web application that presents information about me as a softwa
 
 ### The project uses the following technologies
 
-- **React**
-- **Next.js**
-- **Typescript**
-- **Tailwind CSS**
-- **Prettier**
+- [React](https://react.dev)
+- [Next.js](https://nextjs.org/)
+- [Typescript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Prettier](https://prettier.io/)
 
 ### The project includes the following features
 
@@ -43,6 +43,8 @@ This project was inspired by some websites. While this project is not a direct c
 <https://vitochan.com/>
 
 <https://kcwong395.github.io/>
+
+<https://3dfolio-ivory.vercel.app/>
 
 ## License
 
