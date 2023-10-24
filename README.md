@@ -30,4 +30,4 @@ The project uses the following technologies:
 
 ## License
 
-The project is licensed under the Mozilla Public License Version 2.0.
+The project is licensed under the Apache License 2.0.

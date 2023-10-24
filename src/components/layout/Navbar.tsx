@@ -1,12 +1,14 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import {
-  IoClose,
+  // IoClose,
   IoLogoGithub,
   IoLogoLinkedin,
-  IoMenuOutline,
+  // IoMenuOutline,
 } from "react-icons/io5";
 import { BiSolidFilePdf } from "react-icons/bi";
+import { NavMenuIcon } from "@/components/layout/navMenu/NavMenuIcon";
+import { Helmet } from "react-helmet";
 
 export function Navbar(): JSX.Element {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -54,8 +56,11 @@ export function Navbar(): JSX.Element {
 
   return (
     <>
+      <Helmet>
+        <body className={showMobileMenu ? "blurring" : ""} />
+      </Helmet>
       {showMobileMenu && (
-        <div className="fixed top-0 left-0 h-screen w-screen flex justify-center items-center flex-col bg-white dark:bg-[#27374D] gap-4 z-40">
+        <div className="fixed top-0 right-0 h-screen w-aside flex justify-center items-center flex-col bg-slate-50 dark:bg-[#27374D] gap-4 z-40 shadow-aside-width">
           <NavButton id="home" label="Home" />
           <NavButton id="about" label="About" />
           <NavButton id="experience" label="Experience" />
@@ -102,23 +107,25 @@ export function Navbar(): JSX.Element {
         </div>
       </nav>
       <nav
-        className={`visible lg:invisible fixed top-0 left-0 w-full flex justify-center ${
-          showMobileMenu
-            ? "bg-white"
-            : `bg-slate-50 ${scrolled && "shadow-lg opacity-90"}`
+        className={`visible lg:invisible fixed top-0 left-0 w-full flex justify-center bg-slate-50 ${
+          scrolled && `${!showMobileMenu && "shadow-lg"} opacity-90`
         } px-5 z-40`}
       >
         <div className="relative w-[90vw] mx-auto py-4 flex items-center justify-between">
           <div className="dark:text-white">
             <NavButton id="home" label="Timothy" />
           </div>
-          <button
+          {/* <button
             className="relative p-2 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-md inline-flex items-center cursor-pointer"
             onClick={() => setShowMobileMenu(!showMobileMenu)}
           >
             {!showMobileMenu && <IoMenuOutline size={20} />}
             {showMobileMenu && <IoClose size={20} />}
-          </button>
+          </button> */}
+          <NavMenuIcon
+            toggleMenu={setShowMobileMenu}
+            menuOpen={showMobileMenu}
+          />
         </div>
       </nav>
     </>

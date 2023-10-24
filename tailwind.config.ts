@@ -15,6 +15,7 @@ const config: Config = {
         secondary: "#aaa6c3",
         tertiary: "#151030",
         contact: "#5f6369",
+        aside: "rgba(2, 12, 27, 0.7)",
         "contact-button": "#d3dbe8",
         "secondary-hover": "#808080",
         "black-100": "#100d25",
@@ -23,9 +24,13 @@ const config: Config = {
       },
       boxShadow: {
         card: "0px 35px 120px -15px #211e35",
+        "aside-width": "-10px 0px 30px -15px rgba(2, 12, 27, 0.7)",
       },
       screens: {
         xs: "450px",
+      },
+      width: {
+        aside: "min(75vw,300px)",
       },
     },
   },

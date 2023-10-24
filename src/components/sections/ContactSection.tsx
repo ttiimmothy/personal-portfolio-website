@@ -70,8 +70,8 @@ const ContactSection: React.FC = () => {
   };
 
   return (
-    <div className="flex xl:flex-row flex-col-reverse gap-10 overflow-hidden xl:max-w-[650px] xl:mx-auto lg:min-h-[80vh]">
-      <div className="xl:flex-[0.5] xl:mx-auto flex[1]">
+    <div className="overflow-hidden xl:max-w-[650px] xl:mx-auto lg:min-h-[80vh]">
+      <div className="md:mx-auto md:w-[350px] mx-16">
         <motion.div variants={textVariant()}>
           <p className={`${styles.sectionSubText} text-center`}>Get in touch</p>
           {/* <h3 className={styles.sectionHeadText}>Contact.</h3> */}

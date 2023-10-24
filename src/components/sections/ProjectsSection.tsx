@@ -20,7 +20,10 @@ import {
   vite,
 } from "@/assets";
 
-const ProjectStack: React.FC<{ stack: string }> = ({ stack }) => {
+const ProjectStack: React.FC<{ stack: string; link: string | undefined }> = ({
+  stack,
+  link,
+}) => {
   let stackImage;
   switch (stack) {
     case "react":
@@ -46,7 +49,17 @@ const ProjectStack: React.FC<{ stack: string }> = ({ stack }) => {
       break;
   }
 
-  return (
+  return link ? (
+    <Link href={link} target="_blank">
+      <Image
+        src={stackImage}
+        alt="stack"
+        width={20}
+        height={20}
+        className="h-[28px] w-auto object-cover"
+      />
+    </Link>
+  ) : (
     <Image
       src={stackImage}
       alt="stack"
@@ -115,7 +128,11 @@ const ProjectCard: React.FC<{ project: Project; index: number }> = ({
         </div>
         <div className="absolute bottom-4 flex gap-4">
           {project.stacks.map((stack, index) => (
-            <ProjectStack stack={stack} key={index} />
+            <ProjectStack
+              stack={stack}
+              key={index}
+              link={project.stackLinks[stack]}
+            />
           ))}
         </div>
       </div>
