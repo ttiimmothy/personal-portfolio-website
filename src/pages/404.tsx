@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
-function CustomError() {
+function ErrorPage() {
   const router = useRouter();
 
   return (
@@ -33,4 +33,4 @@ function CustomError() {
   );
 }
 
-export default CustomError;
+export default ErrorPage;
