@@ -1,7 +1,7 @@
 import { SetStateAction } from "react";
-import styles from "./navMenuIcon.module.css";
+import styles from "./navMobileMenuIcon.module.css";
 
-export const NavMenuIcon: React.FC<{
+export const NavMobileMenuIcon: React.FC<{
   toggleMenu: (value: SetStateAction<boolean>) => void;
   menuOpen: boolean;
 }> = ({ toggleMenu, menuOpen }) => {
