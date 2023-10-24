@@ -91,7 +91,7 @@ const ProjectCard: React.FC<{ project: Project; index: number }> = ({
     <motion.div
       variants={fadeIn("up", "spring", index * 0.5, 0.75)}
       key={project.name}
-      className="relative border-2 border-gray-100 rounded-lg shadow-xl min-h-[380px]"
+      className="relative border-2 border-gray-100 rounded-lg shadow-xl min-h-[390px]"
     >
       {projectImage && (
         <Image
@@ -105,7 +105,7 @@ const ProjectCard: React.FC<{ project: Project; index: number }> = ({
       <div className="flex flex-col gap-2 p-4">
         <p className="text-xl font-semibold">{project.name}</p>
         <p className="text-sm text-gray-600">{project.description}</p>
-        <div className="absolute bottom-16 flex gap-4">
+        <div className="absolute bottom-14 flex gap-4">
           {project.stacks.map((stack, index) => (
             <ProjectStack
               stack={stack}
