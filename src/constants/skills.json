@@ -9,7 +9,7 @@
   },
   {
     "title": "Database Management",
-    "stacks": ["Postgresql", "MySQL", "MongoDB"]
+    "stacks": ["PostgreSQL", "MySQL", "MongoDB"]
   },
   {
     "title": "Cloud and Infrastructure",
