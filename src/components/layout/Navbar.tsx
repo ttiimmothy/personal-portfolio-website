@@ -53,7 +53,7 @@ const Navbar: React.FC = () => {
     };
 
     return (
-      <Link href={id === "home" ? "/" : `#${id}`}>
+      <Link href={id === "home" ? "/" : `/#${id}`}>
         <button
           type="button"
           className="text-md p-1.5 px-4 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-md"
