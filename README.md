@@ -46,6 +46,15 @@ This project was inspired by some websites. While this project is not a direct c
 
 <https://3dfolio-ivory.vercel.app/>
 
+## Contributing
+
+This repository welcomes contributions from other developers. To contribute to my portfolio website project, please follow these steps:
+
+- Fork the repository
+- Create a new branch for your changes
+- Make your changes and commit them to your branch
+- Submit a pull request to merge your changes back into the main branch
+
 ## License
 
 The project is licensed under the Apache License 2.0.
