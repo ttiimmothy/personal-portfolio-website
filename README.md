@@ -3,6 +3,9 @@
 Hi I am Timothy, a Software Engineer, here is a simple single page web application that let you know more about me.
 
 ## Description
+[![ci](https://github.com/ttiimmothy/portfolio/actions/workflows/ci.yml/badge.svg)](https://github.com/ttiimmothy/portfolio/actions/workflows/ci.yml)
+[![cd](https://github.com/ttiimmothy/portfolio/actions/workflows/cicd.yml/badge.svg)](https://github.com/ttiimmothy/portfolio/actions/workflows/cicd.yml)
+[![pages-build-deployment](https://github.com/ttiimmothy/portfolio/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/ttiimmothy/portfolio/actions/workflows/pages/pages-build-deployment)
 
 This project is a web application that presents information about me as a software engineer. It includes sections such as my professional experience, technical skills, and projects I have worked on.
 
