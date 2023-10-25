@@ -23,5 +23,6 @@ body.blurring main > * {
 }
 
 .navbar-menu-animation {
-  transition: var(--transition);
+  transition: var(--nav-menu-transition);
+  /* transition: var(--transition); */
 }
