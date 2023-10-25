@@ -21,3 +21,7 @@ body.blurring main > * {
 #logo {
   color: var(--gray);
 }
+
+.navbar-menu-animation {
+  transition: var(--transition);
+}
