@@ -2,7 +2,7 @@ import Link from "next/link";
 import { BiSolidFilePdf } from "react-icons/bi";
 import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io5";
 
-export function Footer(): JSX.Element {
+const Footer: React.FC = () => {
   return (
     <footer className="border-t">
       <div className="flex flex-col lg:flex-row items-center lg:justify-between justify-center h-24 lg:w-[768px] lg:mx-auto">
@@ -43,11 +43,13 @@ export function Footer(): JSX.Element {
             href="https://github.com/ttiimmothy"
             className="hover:text-gray-200 dark:hover:text-gray-600"
           >
-            Timothy Li
+            Timothy
           </Link>{" "}
           {new Date().getFullYear()}
         </p>
       </div>
     </footer>
   );
-}
+};
+
+export default Footer;

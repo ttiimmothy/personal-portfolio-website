@@ -4,20 +4,39 @@
     "name": "Task Manager",
     "description": "Task Manager is a application that help task status management.",
     "originLink": "https://ttiimmothy.github.io/task-manager",
-    "githubLink": "https://github.com/ttiimmothy/task-manager"
+    "githubLink": "https://github.com/ttiimmothy/task-manager",
+    "stacks": ["react", "vite", "tailwind"],
+    "stackLinks": {
+      "react": "https://react.dev/",
+      "vite": "https://vitejs.dev/",
+      "tailwind": "https://tailwindcss.com/"
+    }
   },
   {
     "backdropImage": "ttc_refractor",
     "name": "TTC Refractor",
     "description": "TTC Refractor is a real-time transit application that provides estimated arrival times (eta) for TTC buses and streetcars.",
     "originLink": "https://ttiimmothy.github.io/ttc-refractor",
-    "githubLink": "https://github.com/ttiimmothy/ttc-refractor"
+    "githubLink": "https://github.com/ttiimmothy/ttc-refractor",
+    "stacks": ["react", "fluentui", "redux", "reactrouter"],
+    "stackLinks": {
+      "react": "https://react.dev/",
+      "fluentui": "https://developer.microsoft.com/en-us/fluentui/",
+      "redux": "https://redux-toolkit.js.org/",
+      "reactrouter": "https://reactrouter.com/en/main"
+    }
   },
   {
     "backdropImage": "personal_website",
     "name": "Personal Portfolio",
     "description": "A single page web application to know about me. Stay tuned.",
     "originLink": "https://ttiimmothy.github.io/portfolio",
-    "githubLink": "https://github.com/ttiimmothy/portfolio"
+    "githubLink": "https://github.com/ttiimmothy/portfolio",
+    "stacks": ["react", "next", "tailwind"],
+    "stackLinks": {
+      "react": "https://react.dev/",
+      "next": "https://nextjs.org/",
+      "tailwind": "https://tailwindcss.com/"
+    }
   }
 ]
