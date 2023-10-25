@@ -11,7 +11,7 @@ import { NavMobileMenuIcon } from "@/components/layout/navMobileMenu/NavMobileMe
 import { Helmet } from "react-helmet";
 import useOnClickOutside from "@/components/hooks/useOnClickOutside";
 
-export function Navbar(): JSX.Element {
+const Navbar: React.FC = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const wrapperRef = useRef(null);
@@ -45,26 +45,28 @@ export function Navbar(): JSX.Element {
 
   const NavButton = ({ id, label }: { id: string; label: string }) => {
     const scrollTo = () => {
-      if (document.getElementById(id) == null) {
-        return;
-      }
-      document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+      // if (document.getElementById(id) == null) {
+      //   return;
+      // }
+      // document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
       setShowMobileMenu(false);
     };
 
     return (
-      <button
-        type="button"
-        className="text-md p-1.5 px-4 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-md"
-        onClick={scrollTo}
-      >
-        {/* {id === "home" ? (
+      <Link href={id === "home" ? "/" : `#${id}`}>
+        <button
+          type="button"
+          className="text-md p-1.5 px-4 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-md"
+          onClick={scrollTo}
+        >
+          {/* {id === "home" ? (
           <Link href="/">{label}</Link>
         ) : ( */}
-        <Link href={id === "home" ? "/" : `#${id}`}>{label}</Link>
-        {/* )} */}
-        {/* {label} */}
-      </button>
+          {label}
+          {/* )} */}
+          {/* {label} */}
+        </button>
+      </Link>
     );
   };
 
@@ -146,6 +148,6 @@ export function Navbar(): JSX.Element {
       </nav>
     </>
   );
-}
+};
 
 export default Navbar;

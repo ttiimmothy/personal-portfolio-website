@@ -35,12 +35,12 @@ const HomeSection: React.FC = () => {
         </div>
       </div>
       <div className="absolute bottom-20 lg:bottom-28 mt-40 w-full flex justify-center">
-        <button
-          type="button"
-          // onClick={() => scrollTo("about")}
-          className="flex justify-center w-8 h-16 border-2 border-[#808080] dark:border-white rounded-full p-1"
-        >
-          <Link href="/#about">
+        <Link href="/#about">
+          <button
+            type="button"
+            // onClick={() => scrollTo("about")}
+            className="flex justify-center w-8 h-16 border-2 border-[#808080] dark:border-white rounded-full p-1"
+          >
             <motion.div
               animate={{ y: [0, 40], opacity: [1, 0] }}
               transition={{
@@ -51,8 +51,8 @@ const HomeSection: React.FC = () => {
               }}
               className="w-4 h-4 bg-secondary dark:bg-white rounded-full"
             />
-          </Link>
-        </button>
+          </button>
+        </Link>
       </div>
     </section>
   );

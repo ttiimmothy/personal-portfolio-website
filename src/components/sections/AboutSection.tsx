@@ -4,7 +4,7 @@ import SectionWrapper from "@/components/layout/SectionWrapper";
 import { motion } from "framer-motion";
 import { fadeIn, textVariant } from "@/components/utils/motions";
 import { styles } from "@/components/utils/styles";
-import TechnologyBalls from "@/components/bin/TechnologyBalls";
+import TechnologyBalls from "@/components/TechnologyBalls";
 
 interface SkillTagProps {
   label: string;
