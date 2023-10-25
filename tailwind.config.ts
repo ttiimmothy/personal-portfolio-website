@@ -32,6 +32,9 @@ const config: Config = {
       width: {
         aside: "min(75vw,300px)",
       },
+      zIndex: {
+        "99": "99",
+      },
     },
   },
   plugins: [],

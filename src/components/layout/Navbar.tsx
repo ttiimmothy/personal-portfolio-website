@@ -11,7 +11,7 @@ import { NavMobileMenuIcon } from "@/components/layout/navMobileMenu/NavMobileMe
 import { Helmet } from "react-helmet";
 import useOnClickOutside from "@/components/hooks/useOnClickOutside";
 
-export function Navbar(): JSX.Element {
+const Navbar: React.FC = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const wrapperRef = useRef(null);
@@ -148,6 +148,6 @@ export function Navbar(): JSX.Element {
       </nav>
     </>
   );
-}
+};
 
 export default Navbar;

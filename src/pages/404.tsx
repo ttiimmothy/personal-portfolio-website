@@ -1,5 +1,4 @@
-import { Footer } from "@/components/layout/Footer";
-import Navbar from "@/components/layout/Navbar";
+import Layout from "@/components/Layout";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
@@ -8,8 +7,7 @@ function ErrorPage() {
   const router = useRouter();
 
   return (
-    <>
-      <Navbar />
+    <Layout>
       <div className="w-full h-[90vh] flex flex-col gap-3 justify-center items-center">
         <Image
           src={`${router.basePath}/error.svg`}
@@ -28,8 +26,7 @@ function ErrorPage() {
           </p>
         </Link>
       </div>
-      <Footer />
-    </>
+    </Layout>
   );
 }
 

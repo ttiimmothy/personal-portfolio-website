@@ -6,7 +6,8 @@
   margin: 0 !important;
 }
 
-body.blurring {
+body.blurring,
+body.body-hidden {
   overflow: hidden;
 }
 
@@ -15,4 +16,8 @@ body.blurring main > * {
   transition: var(--transition);
   pointer-events: none;
   user-select: none;
+}
+
+#logo {
+  color: var(--gray);
 }

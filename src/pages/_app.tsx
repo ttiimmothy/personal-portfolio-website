@@ -3,8 +3,6 @@ import "@/globals.css";
 import "@/index.css";
 import { useRouter } from "next/router";
 import Head from "next/head";
-import { Navbar } from "@/components/layout/Navbar";
-import { Footer } from "@/components/layout/Footer";
 import { ThemeProvider } from "next-themes";
 import { Analytics } from "@vercel/analytics/react";
 
@@ -19,10 +17,10 @@ export default function App({ Component, pageProps }: AppProps) {
         <Head>
           <title>Timothy</title>
         </Head>
-        <Navbar />
+        {/* <Navbar /> */}
         <Component {...pageProps} />
         <Analytics />
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </ThemeProvider>
   );
