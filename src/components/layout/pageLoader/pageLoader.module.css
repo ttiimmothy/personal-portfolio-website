@@ -13,10 +13,6 @@
   fill: none;
   user-select: none;
 }
-/* .logo-wrapper #B,
-.logo-wrapper-mounted #B {
-  opacity: 0;
-} */
 .logo-wrapper-mounted {
   opacity: 1;
 }

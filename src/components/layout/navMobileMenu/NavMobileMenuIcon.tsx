@@ -10,7 +10,6 @@ export const NavMobileMenuIcon: React.FC<{
       onClick={() => {
         toggleMenu(!menuOpen);
       }}
-      // menuOpen={menuOpen}
       aria-label="Menu"
       className={styles["menu-icon"]}
     >

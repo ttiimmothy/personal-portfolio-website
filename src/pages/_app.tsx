@@ -17,10 +17,8 @@ export default function App({ Component, pageProps }: AppProps) {
         <Head>
           <title>Timothy</title>
         </Head>
-        {/* <Navbar /> */}
         <Component {...pageProps} />
         <Analytics />
-        {/* <Footer /> */}
       </div>
     </ThemeProvider>
   );

@@ -4,13 +4,6 @@ import roles from "@/constants/roles.json";
 import Link from "next/link";
 
 const HomeSection: React.FC = () => {
-  // const scrollTo = (id: string) => {
-  //   if (document.getElementById(id) === null) {
-  //     return;
-  //   }
-  //   document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
-  // };
-
   return (
     <section id="home" className="relative h-screen flex items-center">
       <div className="flex flex-col lg:flex-row justify-center items-center w-full">
@@ -38,7 +31,6 @@ const HomeSection: React.FC = () => {
         <Link href="/#about">
           <button
             type="button"
-            // onClick={() => scrollTo("about")}
             className="flex justify-center w-8 h-16 border-2 border-[#808080] dark:border-white rounded-full p-1"
           >
             <motion.div

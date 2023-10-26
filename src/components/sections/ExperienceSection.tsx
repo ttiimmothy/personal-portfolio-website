@@ -53,8 +53,6 @@ const ExperienceCard: React.FC<{ experience: Experience }> = ({
   return (
     <VerticalTimelineElement
       contentStyle={{
-        // background: "#1d1836",
-        // color: "#fff",
         background: experience.company_name ? "#fff" : "transparent",
         color: "#1d1836",
       }}
@@ -120,9 +118,6 @@ const ExperienceSection: React.FC = () => {
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} text-center`}>My Experience</p>
         <p className={`${styles.sectionText} text-center`}>Journey Begins</p>
-        {/* <h2 className={`${styles.sectionHeadText} text-center`}>
-          Work Experience
-        </h2> */}
       </motion.div>
       <div className="mt-20 flex flex-col">
         <VerticalTimeline lineColor="#dadada">
