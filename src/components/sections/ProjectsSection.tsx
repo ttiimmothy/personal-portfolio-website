@@ -91,7 +91,11 @@ const ProjectCard: React.FC<{ project: Project; index: number }> = ({
     <motion.div
       variants={fadeIn("up", "spring", index * 0.5, 0.75)}
       key={project.name}
+<<<<<<< Updated upstream
       className="relative border-2 border-gray-100 rounded-lg shadow-xl min-h-[390px]"
+=======
+      className="relative border-2 border-gray-100 rounded-lg shadow-xl min-h-[390px] mx-3 md:mx-0"
+>>>>>>> Stashed changes
     >
       {projectImage && (
         <Image

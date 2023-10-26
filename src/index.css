@@ -13,7 +13,7 @@ body.body-hidden {
 
 body.blurring main > * {
   filter: blur(5px) brightness(0.7);
-  transition: var(--transition);
+  transition: var(--custom-transition);
   pointer-events: none;
   user-select: none;
 }
@@ -21,3 +21,11 @@ body.blurring main > * {
 #logo {
   color: var(--gray);
 }
+<<<<<<< Updated upstream
+=======
+
+.navbar-menu-animation {
+  transition: var(--nav-menu-transition);
+  /* transition: var(--custom-transition); */
+}
+>>>>>>> Stashed changes
