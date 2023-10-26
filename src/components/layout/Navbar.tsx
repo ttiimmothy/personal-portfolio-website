@@ -53,7 +53,7 @@ const Navbar: React.FC = () => {
     };
 
     return (
-      <Link href={id === "home" ? "/" : `#${id}`}>
+      <Link href={id === "home" ? "/" : `/#${id}`}>
         <button
           type="button"
           className="text-md p-1.5 px-4 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-md"
@@ -134,15 +134,27 @@ const Navbar: React.FC = () => {
               toggleMenu={setShowMobileMenu}
               menuOpen={showMobileMenu}
             />
-            {showMobileMenu && (
-              <div className="fixed top-0 right-0 h-screen w-aside flex justify-center items-center flex-col bg-slate-50 dark:bg-[#27374D] gap-4 z-50 shadow-aside-width">
-                <NavButton id="home" label="Home" />
-                <NavButton id="about" label="About" />
-                <NavButton id="experience" label="Experience" />
-                <NavButton id="projects" label="Projects" />
-                <NavButton id="contact" label="Contact" />
-              </div>
-            )}
+            <div
+              className={`fixed top-0 right-0 h-screen w-aside flex justify-center items-center flex-col bg-slate-50 dark:bg-[#27374D] gap-4 z-50 shadow-aside-width ${
+                showMobileMenu
+                  ? "visible translate-x-0"
+                  : "invisible translate-x-[100vw]"
+              } navbar-menu-animation`}
+            >
+              <NavButton id="home" label="Home" />
+              <NavButton id="about" label="About" />
+              <NavButton id="experience" label="Experience" />
+              <NavButton id="projects" label="Projects" />
+              <NavButton id="contact" label="Contact" />
+              <Link
+                target="_blank"
+                href="/timothy_resume.pdf"
+                className="flex relative items-center p-1.5 px-4 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-md"
+                rel="noopener noreferrer"
+              >
+                Resume
+              </Link>
+            </div>
           </div>
         </div>
       </nav>

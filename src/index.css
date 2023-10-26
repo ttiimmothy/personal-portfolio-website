@@ -21,11 +21,8 @@ body.blurring main > * {
 #logo {
   color: var(--gray);
 }
-<<<<<<< Updated upstream
-=======
 
 .navbar-menu-animation {
   transition: var(--nav-menu-transition);
   /* transition: var(--custom-transition); */
 }
->>>>>>> Stashed changes

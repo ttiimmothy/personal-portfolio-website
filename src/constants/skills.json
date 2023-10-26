@@ -1,7 +1,7 @@
 [
   {
     "title": "Frontend",
-    "stacks": ["React", "Next.js", "@redux/toolkit", "Vue"]
+    "stacks": ["React", "Next.js", "@reduxjs/toolkit", "Vue"]
   },
   {
     "title": "Backend Development",

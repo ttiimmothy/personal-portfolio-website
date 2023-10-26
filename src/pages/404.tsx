@@ -7,7 +7,7 @@ function ErrorPage() {
   const router = useRouter();
 
   return (
-    <Layout>
+    <Layout location={router.asPath}>
       <div className="w-full h-[90vh] flex flex-col gap-3 justify-center items-center">
         <Image
           src={`${router.basePath}/error.svg`}

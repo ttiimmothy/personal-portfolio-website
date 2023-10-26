@@ -5,10 +5,13 @@ import ProjectsSection from "@/components/sections/ProjectsSection";
 import ContactSection from "@/components/sections/ContactSection";
 import ScrollTop from "@/components/layout/ScrollTop";
 import Layout from "@/components/Layout";
+import { useRouter } from "next/router";
 
 export default function Home() {
+  const router = useRouter();
+
   return (
-    <Layout>
+    <Layout location={router.asPath}>
       <main className="mx-auto max-w-5xl 2xl:w-4/5 w-11/12">
         <HomeSection />
         <AboutSection />
