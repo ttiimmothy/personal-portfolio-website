@@ -13,7 +13,7 @@ body.body-hidden {
 
 body.blurring main > * {
   filter: blur(5px) brightness(0.7);
-  transition: var(--transition);
+  transition: var(--custom-transition);
   pointer-events: none;
   user-select: none;
 }
@@ -24,5 +24,5 @@ body.blurring main > * {
 
 .navbar-menu-animation {
   transition: var(--nav-menu-transition);
-  /* transition: var(--transition); */
+  /* transition: var(--custom-transition); */
 }

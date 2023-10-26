@@ -2,7 +2,7 @@
 .logo-wrapper-mounted {
   width: max-content;
   max-width: 100px;
-  transition: var(--transition);
+  transition: var(--custom-transition);
 }
 .logo-wrapper svg,
 .logo-wrapper-mounted svg {
