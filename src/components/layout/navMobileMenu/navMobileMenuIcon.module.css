@@ -53,7 +53,6 @@
 .button-box-inner-open {
   transition-delay: 0.12s;
   transform: rotate(45deg);
-  /* transform: rotate(225deg); */
   transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 

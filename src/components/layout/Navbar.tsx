@@ -1,11 +1,6 @@
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
-import {
-  // IoClose,
-  IoLogoGithub,
-  IoLogoLinkedin,
-  // IoMenuOutline,
-} from "react-icons/io5";
+import { IoLogoGithub, IoLogoLinkedin, IoMail } from "react-icons/io5";
 import { BiSolidFilePdf } from "react-icons/bi";
 import { NavMobileMenuIcon } from "@/components/layout/navMobileMenu/NavMobileMenuIcon";
 import { Helmet } from "react-helmet";
@@ -45,10 +40,6 @@ const Navbar: React.FC = () => {
 
   const NavButton = ({ id, label }: { id: string; label: string }) => {
     const scrollTo = () => {
-      // if (document.getElementById(id) == null) {
-      //   return;
-      // }
-      // document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
       setShowMobileMenu(false);
     };
 
@@ -59,12 +50,7 @@ const Navbar: React.FC = () => {
           className="text-md p-1.5 px-4 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-md"
           onClick={scrollTo}
         >
-          {/* {id === "home" ? (
-          <Link href="/">{label}</Link>
-        ) : ( */}
           {label}
-          {/* )} */}
-          {/* {label} */}
         </button>
       </Link>
     );
@@ -105,6 +91,13 @@ const Navbar: React.FC = () => {
             </Link>
             <Link
               target="_blank"
+              href="mailto:timothyemail805@gmail.com"
+              className="relative flex items-center p-1.5 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-md"
+            >
+              <IoMail size={28} className="dark:text-gray-50" />
+            </Link>
+            <Link
+              target="_blank"
               href="/timothy_resume.pdf"
               className="relative flex items-center p-1.5 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-md"
             >
@@ -122,13 +115,6 @@ const Navbar: React.FC = () => {
           <div className="dark:text-white">
             <NavButton id="home" label="Timothy" />
           </div>
-          {/* <button
-            className="relative p-2 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-md inline-flex items-center cursor-pointer"
-            onClick={() => setShowMobileMenu(!showMobileMenu)}
-          >
-            {!showMobileMenu && <IoMenuOutline size={20} />}
-            {showMobileMenu && <IoClose size={20} />}
-          </button> */}
           <div ref={wrapperRef}>
             <NavMobileMenuIcon
               toggleMenu={setShowMobileMenu}

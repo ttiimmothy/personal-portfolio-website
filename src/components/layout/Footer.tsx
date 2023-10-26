@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { BiSolidFilePdf } from "react-icons/bi";
-import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io5";
+import { IoLogoGithub, IoLogoLinkedin, IoMail } from "react-icons/io5";
 
 const Footer: React.FC = () => {
   return (
@@ -21,13 +21,13 @@ const Footer: React.FC = () => {
           >
             <IoLogoLinkedin size={28} className="dark:text-gray-50" />
           </Link>
-          {/* <Link
-          target="_blank"
-          href="mailto:tsangmartin1225@gmail.com"
-          className="relative flex items-center p-1.5 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-md"
-        >
-          <IoMail size={28} className="dark:text-gray-50" />
-        </Link> */}
+          <Link
+            target="_blank"
+            href="mailto:timothyemail805@gmail.com"
+            className="relative flex items-center p-1.5 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-md"
+          >
+            <IoMail size={28} className="dark:text-gray-50" />
+          </Link>
           <Link
             target="_blank"
             href="/timothy_resume.pdf"

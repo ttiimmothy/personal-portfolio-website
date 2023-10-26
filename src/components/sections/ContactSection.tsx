@@ -5,9 +5,6 @@ import emailjs from "@emailjs/browser";
 import { styles } from "@/components/utils/styles";
 import SectionWrapper from "../layout/SectionWrapper";
 import { fadeIn, textVariant } from "../utils/motions";
-// import { EarthCanvas } from "./canvas";
-// import { SectionWrapper } from "../hoc";
-// import { slideIn } from "../utils/motion";
 
 const ContactSection: React.FC = () => {
   const formRef = useRef<HTMLFormElement | null>(null);
@@ -70,16 +67,12 @@ const ContactSection: React.FC = () => {
   };
 
   return (
-    <div className="overflow-hidden xl:max-w-[650px] xl:mx-auto lg:min-h-[80vh]">
+    <div className="overflow-hidden xl:max-w-[650px] xl:mx-auto lg:min-h-[65vh]">
       <div className="md:mx-auto md:w-[350px] mx-3">
         <motion.div variants={textVariant()}>
           <p className={`${styles.sectionSubText} text-center`}>Get in touch</p>
-          {/* <h3 className={styles.sectionHeadText}>Contact.</h3> */}
         </motion.div>
-        <motion.div
-          variants={fadeIn("up", "spring", 0.1, 0.75)}
-          // className="p-4 rounded-2xl shadow-gray-400 shadow-md"
-        >
+        <motion.div variants={fadeIn("up", "spring", 0.1, 0.75)}>
           <form
             ref={formRef}
             onSubmit={handleSubmit}
@@ -132,12 +125,6 @@ const ContactSection: React.FC = () => {
             </button>
           </form>
         </motion.div>
-        {/* <motion.div
-        variants={slideIn("right", "tween", 0.2, 1)}
-        className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
-      >
-        <EarthCanvas />
-      </motion.div> */}
       </div>
     </div>
   );
