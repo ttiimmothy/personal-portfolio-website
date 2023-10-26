@@ -1,11 +1,11 @@
 [
   {
     "title": "Frontend",
-    "stacks": ["React", "Next.js", "@reduxjs/toolkit", "Vue"]
+    "stacks": ["React", "@reduxjs/toolkit", "Next.js", "Vue"]
   },
   {
     "title": "Backend Development",
-    "stacks": ["Node.js", "Express", "Spring Boot", "Dotnet"]
+    "stacks": [".Net", "Spring Boot", "Node.js", "Express"]
   },
   {
     "title": "Database Management",
@@ -13,10 +13,10 @@
   },
   {
     "title": "Cloud and Infrastructure",
-    "stacks": ["AWS", "Docker", "Kubernetes", "Github Actions"]
+    "stacks": ["Kubernetes", "Docker", "Github Actions", "AWS"]
   },
   {
     "title": "Language",
-    "stacks": ["Cantonese", "English", "Mandarin"]
+    "stacks": ["English", "Cantonese", "Mandarin"]
   }
 ]
