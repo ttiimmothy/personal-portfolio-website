@@ -1,0 +1,29 @@
+name: cd
+on:
+  push:
+    branches:
+      - production
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Install and Build
+        env:
+          NEXT_PUBLIC_EMAILJS_SERVICE_ID: ${{secrets.EMAILJS_SERVICE_ID}}
+          NEXT_PUBLIC_EMAILJS_TEMPLATE_ID: ${{secrets.EMAILJS_TEMPLATE_ID}}
+          NEXT_PUBLIC_EMAILJS_PUBLIC_KEY: ${{secrets.EMAILJS_PUBLIC_KEY}}
+          NEXT_PUBLIC_TO_NAME: ${{secrets.TO_NAME}}
+          NEXT_PUBLIC_TO_EMAIL_ADDRESS: ${{secrets.TO_EMAIL_ADDRESS}}
+        run: |
+          npm ci --legacy-peer-deps
+          npm run build
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: .next

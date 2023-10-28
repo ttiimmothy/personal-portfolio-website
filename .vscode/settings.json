@@ -1,0 +1,23 @@
+{
+  "cSpell.words": [
+    "couldn",
+    "drei",
+    "ecosa",
+    "fluentui",
+    "frameloop",
+    "HKUST",
+    "meinhardt",
+    "nextjs",
+    "nextlint",
+    "Nuxt",
+    "reactrouter",
+    "storeforce",
+    "tailwindcss",
+    "Tecky",
+    "tsbuildinfo",
+    "vercel"
+  ],
+  "files.associations": {
+    "*.css": "tailwindcss"
+  }
+}

@@ -1,0 +1,23 @@
+.hash-span {
+  padding-bottom: 100px;
+  display: block;
+}
+.tw-m-0 {
+  margin: 0 !important;
+}
+body.blurring,
+body.body-hidden {
+  overflow: hidden;
+}
+body.blurring main > * {
+  filter: blur(5px) brightness(0.7);
+  transition: var(--custom-transition);
+  pointer-events: none;
+  user-select: none;
+}
+#logo {
+  color: var(--gray);
+}
+.navbar-menu-animation {
+  transition: var(--nav-menu-transition);
+}
