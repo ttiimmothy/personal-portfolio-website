@@ -1,6 +1,11 @@
 import Link from "next/link";
 import { BiSolidFilePdf } from "react-icons/bi";
-import { IoLogoGithub, IoLogoLinkedin, IoMail } from "react-icons/io5";
+import {
+  IoLogoGithub,
+  IoLogoGitlab,
+  IoLogoLinkedin,
+  IoMail,
+} from "react-icons/io5";
 
 const Footer: React.FC = () => {
   return (
@@ -13,6 +18,13 @@ const Footer: React.FC = () => {
             className="relative flex items-center p-1.5 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-md"
           >
             <IoLogoGithub size={28} className="dark:text-gray-50" />
+          </Link>
+          <Link
+            target="_blank"
+            href="https://gitlab.com/ttiimmothy"
+            className="relative flex items-center p-1.5 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-md"
+          >
+            <IoLogoGitlab size={28} className="dark:text-gray-50" />
           </Link>
           <Link
             target="_blank"
