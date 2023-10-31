@@ -12,7 +12,7 @@ export default function Home() {
 
   return (
     <Layout location={router.asPath}>
-      <main className="mx-auto max-w-5xl 2xl:w-4/5 w-11/12">
+      <main className="md:mx-auto md:max-w-5xl 2xl:w-4/5 md:w-11/12">
         <HomeSection />
         <AboutSection />
         <ExperienceSection />

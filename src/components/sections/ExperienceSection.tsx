@@ -17,10 +17,9 @@ import { motion } from "framer-motion";
 import { textVariant } from "../utils/motions";
 import { styles } from "../utils/styles";
 import experiences from "@/constants/experiences.json";
-import SectionWrapper from "@/components/layout/SectionWrapper";
 
-import "react-vertical-timeline-component/style.min.css";
 import Link from "next/link";
+import SectionWrapper from "../layout/SectionWrapper";
 
 const ExperienceCard: React.FC<{ experience: Experience }> = ({
   experience,
