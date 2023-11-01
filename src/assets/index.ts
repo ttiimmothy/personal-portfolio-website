@@ -20,12 +20,15 @@ import storeforce from "./company/storeforce.png";
 import personal_website from "./projects/personal_website.png";
 import task_manager from "./projects/task_manager.png";
 import ttc_refractor from "./projects/ttc_refractor.png";
+import openrice_canada from "./projects/openrice_canada.png";
 
 import tailwind from "./technology/stacks/tailwind.png";
 import fluentui from "./technology/stacks/fluentui.png";
 import next from "./technology/stacks/next.svg";
 import reactrouter from "./technology/stacks/reactrouter.png";
 import vite from "./technology/stacks/vite.png";
+import java from "./technology/stacks/java.svg";
+import spring from "./technology/stacks/spring.svg";
 
 export {
   css,
@@ -48,9 +51,12 @@ export {
   personal_website,
   task_manager,
   ttc_refractor,
+  openrice_canada,
   tailwind,
   fluentui,
   next,
   reactrouter,
   vite,
+  java,
+  spring,
 };

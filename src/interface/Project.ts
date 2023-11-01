@@ -4,6 +4,7 @@ export interface Project {
   description: string;
   originLink: string;
   githubLink: string;
+  backendGithubLink?: string;
   stacks: string[];
   stackLinks: { [key: string]: string | undefined };
 }
