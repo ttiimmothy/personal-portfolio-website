@@ -5,11 +5,12 @@
     "description": "Task Manager is an application that help task status management.",
     "originLink": "https://ttiimmothy.github.io/task-manager",
     "githubLink": "https://github.com/ttiimmothy/task-manager",
-    "stacks": ["react", "vite", "tailwind"],
+    "stacks": ["react", "vite", "tailwind", "reactbootstrap"],
     "stackLinks": {
       "react": "https://react.dev/",
       "vite": "https://vitejs.dev/",
-      "tailwind": "https://tailwindcss.com/"
+      "tailwind": "https://tailwindcss.com/",
+      "reactbootstrap": "https://react-bootstrap.github.io/"
     }
   },
   {
