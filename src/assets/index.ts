@@ -29,6 +29,7 @@ import reactrouter from "./technology/stacks/reactrouter.png";
 import vite from "./technology/stacks/vite.png";
 import java from "./technology/stacks/java.svg";
 import spring from "./technology/stacks/spring.svg";
+import reactbootstrap from "./technology/stacks/reactbootstrap.png";
 
 export {
   css,
@@ -59,4 +60,5 @@ export {
   vite,
   java,
   spring,
+  reactbootstrap,
 };

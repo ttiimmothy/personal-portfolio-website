@@ -14,6 +14,7 @@ import {
   openrice_canada,
   personal_website,
   react,
+  reactbootstrap,
   reactrouter,
   redux,
   spring,
@@ -56,6 +57,9 @@ const ProjectStack: React.FC<{ stack: string; link: string | undefined }> = ({
       break;
     case "spring":
       stackImage = spring;
+      break;
+    case "reactbootstrap":
+      stackImage = reactbootstrap;
       break;
   }
 
