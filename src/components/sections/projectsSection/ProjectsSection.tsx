@@ -5,7 +5,7 @@ import projects from "@/constants/projects.json";
 import { IoLogoGithub } from "react-icons/io5";
 import { motion } from "framer-motion";
 import { fadeIn, textVariant } from "@/components/utils/motions";
-import { styles } from "@/components/utils/styles";
+import { styles as utilStyles } from "@/components/utils/styles";
 import { Project } from "@/interface/Project";
 import {
   fluentui,
@@ -22,6 +22,7 @@ import {
   ttc_refractor,
   vite,
 } from "@/assets";
+import styles from "./projectsSection.module.css";
 
 const ProjectStack: React.FC<{ stack: string; link: string | undefined }> = ({
   stack,
@@ -106,14 +107,24 @@ const ProjectCard: React.FC<{ project: Project; index: number }> = ({
       className="relative border-2 border-gray-100 rounded-lg shadow-xl min-h-[390px] mx-3 md:mx-0"
     >
       {projectImage && (
-        <Image
-          src={projectImage}
-          alt="project"
-          width={300}
-          height={200}
-          className="h-[160px] w-full object-cover rounded-tl-lg rounded-tr-lg"
-          priority
-        />
+        <div
+          className={`h-[160px] w-full rounded-tl-lg rounded-tr-lg cursor-pointer ${styles["project-image-container"]} flex overflow-hidden`}
+        >
+          <Link
+            href={project.originLink}
+            className="w-[100%] h-[100%]"
+            target="_blank"
+          >
+            <Image
+              src={projectImage}
+              alt="project"
+              width={300}
+              height={200}
+              className={`h-[100%] w-[100%] object-cover ${styles["project-image-hover"]}`}
+              priority
+            />
+          </Link>
+        </div>
       )}
       <div className="flex flex-col gap-2 p-4">
         <p className="text-xl font-semibold">{project.name}</p>
@@ -185,7 +196,7 @@ const ProjectsSection: React.FC = () => {
   return (
     <div>
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} text-center`}>
+        <p className={`${utilStyles.sectionSubText} text-center`}>
           Some Projects that I&apos;ve Built
         </p>
       </motion.div>
