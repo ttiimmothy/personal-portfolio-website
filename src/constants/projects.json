@@ -2,7 +2,7 @@
   {
     "backdropImage": "task_manager",
     "name": "Task Manager",
-    "description": "Task Manager is a application that help task status management.",
+    "description": "Task Manager is an application that help task status management.",
     "originLink": "https://ttiimmothy.github.io/task-manager",
     "githubLink": "https://github.com/ttiimmothy/task-manager",
     "stacks": ["react", "vite", "tailwind"],
@@ -37,6 +37,23 @@
       "react": "https://react.dev/",
       "next": "https://nextjs.org/",
       "tailwind": "https://tailwindcss.com/"
+    }
+  },
+  {
+    "backdropImage": "openrice_canada",
+    "name": "Openrice Canada",
+    "description": "Openrice Canada is an application that introduces the closest restaurant that suits your needs.",
+    "originLink": "https://openricecan.netlify.app/",
+    "githubLink": "https://github.com/cantek-openrice/openrice-frontend",
+    "backendGithubLink": "https://github.com/cantek-openrice/openrice-backend",
+    "stacks": ["react", "tailwind", "redux", "reactrouter", "java", "spring"],
+    "stackLinks": {
+      "react": "https://react.dev/",
+      "tailwind": "https://tailwindcss.com/",
+      "redux": "https://redux-toolkit.js.org/",
+      "reactrouter": "https://reactrouter.com/en/main",
+      "java": "https://www.java.com/en/",
+      "spring": "https://spring.io/"
     }
   }
 ]

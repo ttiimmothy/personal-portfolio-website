@@ -9,11 +9,14 @@ import { styles } from "@/components/utils/styles";
 import { Project } from "@/interface/Project";
 import {
   fluentui,
+  java,
   next,
+  openrice_canada,
   personal_website,
   react,
   reactrouter,
   redux,
+  spring,
   tailwind,
   task_manager,
   ttc_refractor,
@@ -46,6 +49,12 @@ const ProjectStack: React.FC<{ stack: string; link: string | undefined }> = ({
       break;
     case "next":
       stackImage = next;
+      break;
+    case "java":
+      stackImage = java;
+      break;
+    case "spring":
+      stackImage = spring;
       break;
   }
 
@@ -85,6 +94,9 @@ const ProjectCard: React.FC<{ project: Project; index: number }> = ({
     case "personal_website":
       projectImage = personal_website;
       break;
+    case "openrice_canada":
+      projectImage = openrice_canada;
+      break;
   }
 
   return (
@@ -106,7 +118,13 @@ const ProjectCard: React.FC<{ project: Project; index: number }> = ({
       <div className="flex flex-col gap-2 p-4">
         <p className="text-xl font-semibold">{project.name}</p>
         <p className="text-sm text-gray-600">{project.description}</p>
-        <div className="absolute bottom-14 flex gap-4">
+        <div
+          className={`absolute ${
+            project.backendGithubLink
+              ? "md:bottom-[5.4rem] bottom-14"
+              : "bottom-14"
+          } flex gap-4`}
+        >
           {project.stacks.map((stack, index) => (
             <ProjectStack
               stack={stack}
@@ -115,7 +133,7 @@ const ProjectCard: React.FC<{ project: Project; index: number }> = ({
             />
           ))}
         </div>
-        <div className="absolute bottom-4 flex items-center gap-2">
+        <div className="absolute bottom-4 flex items-center gap-2 flex-wrap">
           {project.originLink && (
             <Link
               href={project.originLink}
@@ -125,14 +143,36 @@ const ProjectCard: React.FC<{ project: Project; index: number }> = ({
               Try it
             </Link>
           )}
-          {project.githubLink && (
+          {project.githubLink && project.backendGithubLink ? (
             <Link
               href={project.githubLink}
               className="self-start text-sm bg-slate-500 hover:bg-slate-600 text-white px-3 py-1 rounded-lg flex items-center gap-1"
               target="_blank"
             >
               <IoLogoGithub size={20} />
-              Source Code
+              Source Code (frontend)
+            </Link>
+          ) : (
+            project.githubLink &&
+            !project.backendGithubLink && (
+              <Link
+                href={project.githubLink}
+                className="self-start text-sm bg-slate-500 hover:bg-slate-600 text-white px-3 py-1 rounded-lg flex items-center gap-1"
+                target="_blank"
+              >
+                <IoLogoGithub size={20} />
+                Source Code
+              </Link>
+            )
+          )}
+          {project.backendGithubLink && (
+            <Link
+              href={project.backendGithubLink}
+              className="self-start text-sm bg-slate-500 hover:bg-slate-600 text-white px-3 py-1 rounded-lg flex items-center gap-1"
+              target="_blank"
+            >
+              <IoLogoGithub size={20} />
+              Source Code (backend)
             </Link>
           )}
         </div>
