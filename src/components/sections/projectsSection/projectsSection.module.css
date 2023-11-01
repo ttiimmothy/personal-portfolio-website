@@ -1,0 +1,12 @@
+.project-image-hover {
+  transition: all 1s ease;
+}
+.project-image-container {
+  transform: scale(1);
+}
+.project-image-container:hover {
+  transform: scale(1);
+}
+.project-image-container:hover .project-image-hover {
+  transform: scale(1.3);
+}

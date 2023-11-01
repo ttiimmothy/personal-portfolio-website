@@ -30,7 +30,7 @@
     "backdropImage": "personal_website",
     "name": "Personal Portfolio",
     "description": "A single page web application to know about me. Stay tuned.",
-    "originLink": "https://ttiimmothy.github.io/portfolio",
+    "originLink": "https://ttiimmothy.com",
     "githubLink": "https://github.com/ttiimmothy/portfolio",
     "stacks": ["react", "next", "tailwind"],
     "stackLinks": {
