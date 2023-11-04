@@ -7,7 +7,6 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    /* margin-right: -15px; */
     padding: 5px;
     border: 0;
     z-index: 60;
@@ -49,7 +48,11 @@
   transition-duration: 0.15s;
   transition-property: transform;
 }
-
+.dark-inner-background,
+.dark-inner-background:before,
+.dark-inner-background:after {
+  background-color: #adadad;
+}
 .button-box-inner-open {
   transition-delay: 0.12s;
   transform: rotate(45deg);

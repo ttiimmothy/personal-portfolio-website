@@ -48,7 +48,7 @@ const Footer: React.FC = () => {
             <BiSolidFilePdf size={28} className="dark:text-gray-50" />
           </Link>
         </div>
-        <p>
+        <p className="dark:text-slate-50">
           Copyright ©{" "}
           <Link
             target="_blank"

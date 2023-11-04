@@ -1,4 +1,4 @@
-import { Experience } from "@/interface/Experience";
+import { Experience } from "@/interfaces/Experience";
 import Image from "next/image";
 import {
   VerticalTimeline,
@@ -52,7 +52,7 @@ const ExperienceCard: React.FC<{ experience: Experience }> = ({
   return (
     <VerticalTimelineElement
       contentStyle={{
-        background: experience.company_name ? "#fff" : "transparent",
+        backgroundColor: experience.company_name ? "#fff" : "transparent",
         color: "#1d1836",
       }}
       contentArrowStyle={{ borderRight: "7px solid #3c3e46" }}
@@ -116,7 +116,9 @@ const ExperienceSection: React.FC = () => {
     <>
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} text-center`}>My Experience</p>
-        <p className={`${styles.sectionText} text-center`}>Journey Begins</p>
+        <p className={`${styles.sectionText} dark:text-slate-50 text-center`}>
+          Journey Begins
+        </p>
       </motion.div>
       <div className="mt-20 flex flex-col">
         <VerticalTimeline lineColor="#dadada">
