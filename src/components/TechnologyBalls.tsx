@@ -1,6 +1,6 @@
 import BallCanvas from "@/components/canvas/BallCanvas";
 import technologies from "@/constants/technologies.json";
-import { TechnologyInfo } from "@/interface/TechnologyInfo";
+import { TechnologyInfo } from "@/interfaces/TechnologyInfo";
 import {
   css,
   docker,

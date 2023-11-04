@@ -69,7 +69,7 @@ const Navbar: React.FC = () => {
       <nav
         className={`invisible lg:visible fixed top-0 left-0 w-full flex justify-center bg-slate-50 px-5 z-40 ${
           scrolled && "shadow-lg opacity-90"
-        }`}
+        } dark:bg-slate-800`}
       >
         <div className="relative w-[1024px] mx-auto py-4 flex items-center justify-between">
           <div className="invisible lg:visible group group/list flex dark:text-white">
@@ -121,7 +121,7 @@ const Navbar: React.FC = () => {
       <nav
         className={`visible lg:invisible fixed top-0 left-0 w-full flex justify-center bg-slate-50 ${
           scrolled && `${!showMobileMenu && "shadow-lg"} opacity-90`
-        } px-5 z-40`}
+        } px-5 z-40 dark:bg-slate-800`}
       >
         <div className="relative w-[90vw] mx-auto py-4 flex items-center justify-between">
           <div className="dark:text-white">

@@ -6,7 +6,7 @@ import { IoLogoGithub } from "react-icons/io5";
 import { motion } from "framer-motion";
 import { fadeIn, textVariant } from "@/components/utils/motions";
 import { styles as utilStyles } from "@/components/utils/styles";
-import { Project } from "@/interface/Project";
+import { Project } from "@/interfaces/Project";
 import {
   fluentui,
   java,
@@ -108,7 +108,7 @@ const ProjectCard: React.FC<{ project: Project; index: number }> = ({
     <motion.div
       variants={fadeIn("up", "spring", index * 0.5, 0.75)}
       key={project.name}
-      className="relative border-2 border-gray-100 rounded-lg shadow-xl min-h-[390px] mx-3 md:mx-0"
+      className="relative border-2 border-gray-100 rounded-lg shadow-xl min-h-[390px] mx-3 md:mx-0 dark:shadow-secondary"
     >
       {projectImage && (
         <div
@@ -132,7 +132,9 @@ const ProjectCard: React.FC<{ project: Project; index: number }> = ({
       )}
       <div className="flex flex-col gap-2 p-4">
         <p className="text-xl font-semibold">{project.name}</p>
-        <p className="text-sm text-gray-600">{project.description}</p>
+        <p className="text-sm text-gray-600 dark:text-gray-400">
+          {project.description}
+        </p>
         <div
           className={`absolute ${
             project.backendGithubLink

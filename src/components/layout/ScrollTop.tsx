@@ -25,7 +25,7 @@ const ScrollTop: React.FC = () => {
         <div className="fixed bottom-10 right-10 cursor-pointer">
           <button
             aria-label="scroll back to top"
-            className="outline-none bg-contact-button hover:bg-gray-200 w-12 h-12 rounded-full flex justify-center items-center"
+            className="outline-none bg-contact-button hover:bg-gray-200 dark:bg-primary dark:hover:bg-gray-400 w-12 h-12 rounded-full flex justify-center items-center"
           >
             <IoChevronUpOutline size={20} className="dark:text-gray-50" />
           </button>
