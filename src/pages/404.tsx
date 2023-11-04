@@ -14,7 +14,8 @@ function ErrorPage() {
           alt="not found error"
           width={700}
           height={600}
-          className="h-[400px]"
+          className="h-[400px] w-auto"
+          priority
         />
         <p className="text-2xl font-bold">Oops! Page not Found</p>
         <p className="text-md text-slate-500">
