@@ -17,9 +17,9 @@ import tecky from "./company/tecky.png";
 import cable from "./company/cable.png";
 import storeforce from "./company/storeforce.png";
 
-import personal_website from "./projects/personal_website.png";
-import task_manager from "./projects/task_manager.png";
-import ttc_refractor from "./projects/ttc_refractor.png";
+import personal_portfolio_website from "./projects/personal_portfolio_website.png";
+import task_management_application from "./projects/task_management_application.png";
+import ttc_refactor from "./projects/ttc_refactor.png";
 import openrice_canada from "./projects/openrice_canada.png";
 
 import tailwind from "./technology/stacks/tailwind.png";
@@ -49,9 +49,9 @@ export {
   tecky,
   cable,
   storeforce,
-  personal_website,
-  task_manager,
-  ttc_refractor,
+  personal_portfolio_website,
+  task_management_application,
+  ttc_refactor,
   openrice_canada,
   tailwind,
   fluentui,

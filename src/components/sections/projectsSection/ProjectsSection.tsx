@@ -12,15 +12,15 @@ import {
   java,
   next,
   openrice_canada,
-  personal_website,
+  personal_portfolio_website,
   react,
   reactbootstrap,
   reactrouter,
   redux,
   spring,
   tailwind,
-  task_manager,
-  ttc_refractor,
+  task_management_application,
+  ttc_refactor,
   vite,
 } from "@/assets";
 import styles from "./projectsSection.module.css";
@@ -90,14 +90,14 @@ const ProjectCard: React.FC<{ project: Project; index: number }> = ({
 }) => {
   let projectImage;
   switch (project.backdropImage) {
-    case "task_manager":
-      projectImage = task_manager;
+    case "task_management_application":
+      projectImage = task_management_application;
       break;
-    case "ttc_refractor":
-      projectImage = ttc_refractor;
+    case "ttc_refactor":
+      projectImage = ttc_refactor;
       break;
-    case "personal_website":
-      projectImage = personal_website;
+    case "personal_portfolio_website":
+      projectImage = personal_portfolio_website;
       break;
     case "openrice_canada":
       projectImage = openrice_canada;
