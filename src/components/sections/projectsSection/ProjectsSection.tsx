@@ -12,6 +12,7 @@ import {
   java,
   next,
   openrice_canada,
+  openrice_canada_more_features,
   personal_portfolio_website,
   react,
   reactbootstrap,
@@ -22,6 +23,8 @@ import {
   task_management_application,
   ttc_refactor,
   vite,
+  nodejs,
+  nestjs,
 } from "@/assets";
 import styles from "./projectsSection.module.css";
 
@@ -60,6 +63,12 @@ const ProjectStack: React.FC<{ stack: string; link: string | undefined }> = ({
       break;
     case "reactbootstrap":
       stackImage = reactbootstrap;
+      break;
+    case "nodejs":
+      stackImage = nodejs;
+      break;
+    case "nestjs":
+      stackImage = nestjs;
       break;
   }
 
@@ -102,13 +111,16 @@ const ProjectCard: React.FC<{ project: Project; index: number }> = ({
     case "openrice_canada":
       projectImage = openrice_canada;
       break;
+    case "openrice_canada_more_features":
+      projectImage = openrice_canada_more_features;
+      break;
   }
 
   return (
     <motion.div
       variants={fadeIn("up", "spring", index * 0.5, 0.75)}
       key={project.name}
-      className="relative border-2 border-gray-100 rounded-lg shadow-xl min-h-[390px] mx-3 md:mx-0 dark:shadow-secondary"
+      className="relative border-2 border-gray-100 rounded-lg shadow-xl min-h-[430px] mx-3 md:mx-0 dark:shadow-secondary"
     >
       {projectImage && (
         <div
