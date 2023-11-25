@@ -1,9 +1,12 @@
-import { Experience } from "@/interfaces/Experience";
 import Image from "next/image";
+import Link from "next/link";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
+import { motion } from "framer-motion";
+
+import { Experience } from "@/interfaces/Experience";
 import {
   hkust,
   atkins,
@@ -13,13 +16,10 @@ import {
   cable,
   storeforce,
 } from "@/assets";
-import { motion } from "framer-motion";
 import { textVariant } from "../utils/motions";
 import { styles } from "../utils/styles";
-import experiences from "@/constants/experiences.json";
-
-import Link from "next/link";
 import SectionWrapper from "../layout/SectionWrapper";
+import experiences from "@/constants/experiences.json";
 
 const ExperienceCard: React.FC<{ experience: Experience }> = ({
   experience,
@@ -52,11 +52,12 @@ const ExperienceCard: React.FC<{ experience: Experience }> = ({
   return (
     <VerticalTimelineElement
       contentStyle={{
-        backgroundColor: experience.company_name ? "#fff" : "transparent",
+        backgroundColor: "#fff",
         color: "#1d1836",
       }}
       contentArrowStyle={{ borderRight: "7px solid #3c3e46" }}
       date={experience.date}
+      dateClassName="dark:lg:text-white"
       iconStyle={{
         background: experience.iconBg ? experience.iconBg : "#fff",
       }}

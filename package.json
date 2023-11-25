@@ -4,9 +4,6 @@
   "private": true,
   "license": "GPL-3.0",
   "homepage": "https://ttiimmothy.com",
-  "author": {
-    "name": "Timothy Li"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/ttiimmothy/personal-portfolio-website"

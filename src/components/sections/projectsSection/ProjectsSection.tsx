@@ -120,7 +120,7 @@ const ProjectCard: React.FC<{ project: Project; index: number }> = ({
     <motion.div
       variants={fadeIn("up", "spring", index * 0.5, 0.75)}
       key={project.name}
-      className="relative border-2 border-gray-100 rounded-lg shadow-xl min-h-[390px] lg:min-h-[430px] mx-3 md:mx-0 dark:shadow-secondary"
+      className="relative border-2 border-gray-100 rounded-lg shadow-xl min-h-[390px] lg:min-h-[430px] mx-3 md:mx-0 dark:shadow-dark-project-card"
     >
       {projectImage && (
         <div
