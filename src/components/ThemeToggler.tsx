@@ -9,9 +9,8 @@ function ThemeToggler() {
   useEffect(() => {
     setHasMounted(true);
   }, []);
-  if (!hasMounted) return null;
 
-  return (
+  return hasMounted ? (
     <button
       type="button"
       className="relative p-2 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-md inline-flex items-center"
@@ -20,6 +19,8 @@ function ThemeToggler() {
       {theme === "light" && <IoSunnyOutline size={20} />}
       {theme === "dark" && <IoMoonOutline size={20} color="#adadad" />}
     </button>
+  ) : (
+    <></>
   );
 }
 
