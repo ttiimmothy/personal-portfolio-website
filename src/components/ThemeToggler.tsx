@@ -1,27 +1,25 @@
-import { toggleTheme } from "@/components/utils/themeToggle";
+import { useEffect, useState } from "react";
+import { useTheme } from "next-themes";
 import { IoMoonOutline, IoSunnyOutline } from "react-icons/io5";
 
 function ThemeToggler() {
+  const { theme, setTheme } = useTheme();
+  const [hasMounted, setHasMounted] = useState(false);
+
+  useEffect(() => {
+    setHasMounted(true);
+  }, []);
+  if (!hasMounted) return null;
+
   return (
-    <label className="relative p-1.5 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-md inline-flex items-center cursor-pointer">
-      <input
-        onClick={toggleTheme}
-        type="checkbox"
-        value=""
-        className="sr-only peer"
-      />
-      <div className="relative lg:block hidden">
-        <IoSunnyOutline
-          size={24}
-          className="absolute top-0 visible dark:invisible"
-        />
-        <IoMoonOutline
-          size={24}
-          color="white"
-          className="invisible dark:visible"
-        />
-      </div>
-    </label>
+    <button
+      type="button"
+      className="relative p-2 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-md inline-flex items-center"
+      onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+    >
+      {theme === "light" && <IoSunnyOutline size={20} />}
+      {theme === "dark" && <IoMoonOutline size={20} color="#adadad" />}
+    </button>
   );
 }
 

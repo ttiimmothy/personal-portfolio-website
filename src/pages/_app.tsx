@@ -1,7 +1,7 @@
 import type { AppProps } from "next/app";
 import "@/globals.css";
 import "@/index.css";
-import "@/react-vertical-timeline-component/style.min.css";
+import "@/vertical-timeline-component/style.min.css";
 import { useRouter } from "next/router";
 import Head from "next/head";
 import { ThemeProvider } from "next-themes";

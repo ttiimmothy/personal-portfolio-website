@@ -96,10 +96,6 @@
     margin-left: -30px;
   }
 }
-/* .vertical-timeline-element-icon {
-  -webkit-transform: translateZ(0);
-  -webkit-backface-visibility: hidden;
-} */
 .vertical-timeline--animate .vertical-timeline-element-icon.is-hidden {
   visibility: hidden;
 }
