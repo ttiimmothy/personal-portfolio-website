@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
 import anime from "animejs";
-import IconLoader from "@/components/icons/IconLoader";
+import IconLoaderSvg from "@/components/icons/IconLoaderSvg";
 import styles from "./pageLoader.module.css";
 
 const PageLoader: React.FC<{
@@ -45,14 +45,14 @@ const PageLoader: React.FC<{
   }, [finishLoading]);
 
   return (
-    <div className="loader flex justify-center items-center fix inset-0 w-screen h-screen bg-slate-50 z-99">
+    <div className="loader flex justify-center items-center fix inset-0 w-screen h-screen bg-slate-50 dark:bg-slate-800 z-99">
       <Helmet bodyAttributes={{ class: "body-hidden" }} />
       <div
         className={
           isMounted ? styles["logo-wrapper-mounted"] : styles["logo-wrapper"]
         }
       >
-        <IconLoader />
+        <IconLoaderSvg />
       </div>
     </div>
   );

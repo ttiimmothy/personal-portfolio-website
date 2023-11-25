@@ -1,6 +1,11 @@
-const IconLoader: React.FC = () => {
+const IconLoaderSvg: React.FC = () => {
   return (
-    <svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+    <svg
+      id="logo"
+      className="text-loader-gray dark:text-loader-bright"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 100 100"
+    >
       <title>Loader Logo</title>
       <g>
         <path
@@ -18,4 +23,4 @@ const IconLoader: React.FC = () => {
   );
 };
 
-export default IconLoader;
+export default IconLoaderSvg;

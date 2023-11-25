@@ -24,6 +24,8 @@ const config: Config = {
         "dark-project-card": "#42415a",
         "nav-mobile-menu-icon": "#404040",
         "dark-nav-mobile-menu-icon": "#adadad",
+        "loader-gray": "#5f6369",
+        "loader-bright": "#fcfcfc",
       },
       boxShadow: {
         card: "0px 35px 120px -15px #211e35",
