@@ -32,7 +32,7 @@
     "typewriter-effect": "^2.21.0"
   },
   "devDependencies": {
-    "@types/animejs": "^3.1.10",
+    "@types/animejs": "^3.1.12",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
