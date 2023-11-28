@@ -10,6 +10,7 @@ import { BiSolidFilePdf } from "react-icons/bi";
 import { NavMobileMenuIcon } from "@/components/layout/navMobileMenu/NavMobileMenuIcon";
 import { Helmet } from "react-helmet";
 import useOnClickOutside from "@/components/hooks/useOnClickOutside";
+import ThemeToggler from "../ThemeToggler";
 
 const Navbar: React.FC = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -115,6 +116,7 @@ const Navbar: React.FC = () => {
             >
               <BiSolidFilePdf size={28} className="dark:text-gray-50" />
             </Link>
+            <ThemeToggler />
           </div>
         </div>
       </nav>
@@ -139,6 +141,9 @@ const Navbar: React.FC = () => {
                   : "invisible translate-x-[100vw]"
               } navbar-menu-animation`}
             >
+              <div className="absolute top-5 left-10">
+                <ThemeToggler />
+              </div>
               <NavButton id="home" label="Home" />
               <NavButton id="about" label="About" />
               <NavButton id="experience" label="Experience" />

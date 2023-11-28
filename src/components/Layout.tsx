@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
-import PageLoader from "./layout/pageLoader/PageLoader";
+import PageLoader from "./pageLoader/PageLoader";
 import { useRouter } from "next/router";
 
 const Layout: React.FC<{
