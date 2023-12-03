@@ -15,9 +15,6 @@ body.blurring main > * {
   pointer-events: none;
   user-select: none;
 }
-#logo {
-  color: var(--gray);
-}
 .navbar-menu-animation {
   transition: var(--nav-menu-transition);
 }

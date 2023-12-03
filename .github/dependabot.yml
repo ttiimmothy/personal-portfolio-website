@@ -3,10 +3,10 @@ updates:
   - package-ecosystem: npm
     directory: /
     schedule:
-      interval: daily
+      interval: weekly
     open-pull-requests-limit: 10
     pull-request-branch-name:
-      separator: "-"
+      separator: "_"
     commit-message:
       prefix: "chore"
       prefix-development: "chore"
@@ -17,7 +17,7 @@ updates:
       interval: weekly
     open-pull-requests-limit: 10
     pull-request-branch-name:
-      separator: "-"
+      separator: "_"
     commit-message:
       prefix: "chore"
       prefix-development: "chore"

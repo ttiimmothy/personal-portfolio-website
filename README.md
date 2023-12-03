@@ -1,6 +1,5 @@
 # Personal Portfolio Website
 [![ci](https://github.com/ttiimmothy/personal-portfolio-website/actions/workflows/ci.yml/badge.svg)](https://github.com/ttiimmothy/personal-portfolio-website/actions/workflows/ci.yml)
-[![cd](https://github.com/ttiimmothy/personal-portfolio-website/actions/workflows/cicd.yml/badge.svg)](https://github.com/ttiimmothy/personal-portfolio-website/actions/workflows/cicd.yml)
 
 Hi I am Timothy, a Software Engineer, here is a simple single page web application that let you know more about me.
 
