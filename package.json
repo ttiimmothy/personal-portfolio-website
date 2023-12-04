@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
-    "@react-three/drei": "^9.88.17",
+    "@react-three/drei": "^9.90.0",
     "@react-three/fiber": "^8.15.12",
     "@vercel/analytics": "^1.1.1",
     "animejs": "^3.2.2",
