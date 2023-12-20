@@ -45,7 +45,7 @@ const PageLoader: React.FC<{
   }, [finishLoading]);
 
   return (
-    <div className="loader flex justify-center items-center fix inset-0 w-screen h-screen bg-slate-50 dark:bg-slate-800 z-99">
+    <div className="loader flex justify-center items-center fix inset-0 w-screen h-screen bg-slate-50 dark:bg-neutral-900 z-99">
       <Helmet bodyAttributes={{ class: "body-hidden" }} />
       <div
         className={

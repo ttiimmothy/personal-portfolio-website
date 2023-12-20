@@ -14,7 +14,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <ThemeProvider attribute="class" defaultTheme="light">
-      <div className="min-h-screen bg-slate-50 dark:bg-slate-800">
+      <div className="min-h-screen bg-slate-50 dark:bg-zinc-900">
         <Head>
           <title>Timothy</title>
         </Head>
