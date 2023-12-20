@@ -2,6 +2,10 @@ import { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
 import anime from "animejs";
 import IconLoaderSvg from "@/components/icons/IconLoaderSvg";
+import {
+  darkLoadingBackground,
+  lightLoadingBackground,
+} from "../color/default";
 import styles from "./pageLoader.module.css";
 
 const PageLoader: React.FC<{
@@ -45,7 +49,9 @@ const PageLoader: React.FC<{
   }, [finishLoading]);
 
   return (
-    <div className="loader flex justify-center items-center fix inset-0 w-screen h-screen bg-slate-50 dark:bg-neutral-900 z-99">
+    <div
+      className={`loader flex justify-center items-center fix inset-0 w-screen h-screen ${lightLoadingBackground} dark:${darkLoadingBackground} z-99`}
+    >
       <Helmet bodyAttributes={{ class: "body-hidden" }} />
       <div
         className={

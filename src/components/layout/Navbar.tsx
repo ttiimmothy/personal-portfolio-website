@@ -7,8 +7,9 @@ import {
   IoMail,
 } from "react-icons/io5";
 import { BiSolidFilePdf } from "react-icons/bi";
-import { NavMobileMenuIcon } from "@/components/layout/navMobileMenu/NavMobileMenuIcon";
 import { Helmet } from "react-helmet";
+import { darkBackground, lightBackground } from "../color/default";
+import { NavMobileMenuIcon } from "@/components/layout/navMobileMenu/NavMobileMenuIcon";
 import useOnClickOutside from "@/components/hooks/useOnClickOutside";
 import ThemeToggler from "../ThemeToggler";
 
@@ -68,9 +69,9 @@ const Navbar: React.FC = () => {
         <body className={showMobileMenu ? "blurring" : ""} />
       </Helmet>
       <nav
-        className={`invisible lg:visible fixed top-0 left-0 w-full flex justify-center bg-slate-50 px-5 z-40 ${
+        className={`invisible lg:visible fixed top-0 left-0 w-full flex justify-center ${lightBackground} px-5 z-40 ${
           scrolled && "shadow-lg opacity-90"
-        } dark:bg-zinc-900`}
+        } dark:${darkBackground}`}
       >
         <div className="relative w-[1024px] mx-auto py-4 flex items-center justify-between">
           <div className="invisible lg:visible group group/list flex dark:text-white">
@@ -121,9 +122,9 @@ const Navbar: React.FC = () => {
         </div>
       </nav>
       <nav
-        className={`visible lg:invisible fixed top-0 left-0 w-full flex justify-center bg-slate-50 ${
+        className={`visible lg:invisible fixed top-0 left-0 w-full flex justify-center ${lightBackground} ${
           scrolled && `${!showMobileMenu && "shadow-lg"} opacity-90`
-        } px-5 z-40 dark:bg-zinc-900`}
+        } px-5 z-40 dark:${darkBackground}`}
       >
         <div className="relative w-[90vw] mx-auto py-4 flex items-center justify-between">
           <div className="dark:text-white">
@@ -135,7 +136,7 @@ const Navbar: React.FC = () => {
               menuOpen={showMobileMenu}
             />
             <div
-              className={`fixed top-0 right-0 h-screen w-aside flex justify-center items-center flex-col bg-slate-50 dark:bg-zinc-900 gap-4 z-50 shadow-aside-width ${
+              className={`fixed top-0 right-0 h-screen w-aside flex justify-center items-center flex-col ${lightBackground} dark:${darkBackground} gap-4 z-50 shadow-aside-width ${
                 showMobileMenu
                   ? "visible translate-x-0"
                   : "invisible translate-x-[100vw]"
