@@ -9,7 +9,7 @@ import {
 
 const Footer: React.FC = () => {
   return (
-    <footer className="border-t bg-slate-50 dark:bg-slate-800">
+    <footer className="border-t bg-slate-50 dark:bg-zinc-900">
       <div className="flex flex-col lg:flex-row items-center lg:justify-between justify-center h-24 lg:w-[768px] lg:mx-auto">
         <div className="flex items-center gap-2">
           <Link
