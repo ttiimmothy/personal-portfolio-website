@@ -1,15 +1,12 @@
 {
-  "name": "portfolio",
+  "name": "personal_portfolio_website",
   "version": "0.1.0",
   "private": true,
+  "license": "GPL-3.0",
   "homepage": "https://ttiimmothy.com",
-  "license": "Apache-2.0",
-  "author": {
-    "name": "Timothy Li"
-  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ttiimmothy/portfolio"
+    "url": "https://github.com/ttiimmothy/personal-portfolio-website"
   },
   "scripts": {
     "dev": "next dev --port 3975",
@@ -20,8 +17,8 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
-    "@react-three/drei": "^9.88.4",
-    "@react-three/fiber": "^8.15.4",
+    "@react-three/drei": "^9.92.7",
+    "@react-three/fiber": "^8.15.12",
     "@vercel/analytics": "^1.1.1",
     "@vercel/speed-insights": "^1.0.9",
     "animejs": "^3.2.2",
@@ -31,23 +28,23 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
-    "react-icons": "^4.11.0",
+    "react-icons": "^4.12.0",
     "react-vertical-timeline-component": "^3.6.0",
     "typewriter-effect": "^2.21.0"
   },
   "devDependencies": {
-    "@types/animejs": "^3.1.10",
+    "@types/animejs": "^3.1.12",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "@types/react-helmet": "^6.1.8",
-    "@types/react-vertical-timeline-component": "^3.3.5",
+    "@types/react-helmet": "^6.1.11",
+    "@types/react-vertical-timeline-component": "^3.3.6",
     "autoprefixer": "^10.4.16",
     "eslint": "^8",
-    "eslint-config-next": "13.5.4",
-    "postcss": "^8.4.31",
-    "sharp": "^0.32.6",
-    "tailwindcss": "^3.3.3",
+    "eslint-config-next": "14.0.4",
+    "postcss": "^8.4.32",
+    "sharp": "^0.33.1",
+    "tailwindcss": "^3.4.0",
     "typescript": "^5"
   }
 }

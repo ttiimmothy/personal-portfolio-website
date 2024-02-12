@@ -12,16 +12,19 @@ import {
   java,
   next,
   openrice_canada,
-  personal_website,
+  openrice_canada_more_features,
+  personal_portfolio_website,
   react,
   reactbootstrap,
   reactrouter,
   redux,
   spring,
   tailwind,
-  task_manager,
-  ttc_refractor,
+  task_management_application,
+  ttc_refactor,
   vite,
+  nodejs,
+  nestjs,
 } from "@/assets";
 import styles from "./projectsSection.module.css";
 
@@ -61,6 +64,12 @@ const ProjectStack: React.FC<{ stack: string; link: string | undefined }> = ({
     case "reactbootstrap":
       stackImage = reactbootstrap;
       break;
+    case "nodejs":
+      stackImage = nodejs;
+      break;
+    case "nestjs":
+      stackImage = nestjs;
+      break;
   }
 
   return link ? (
@@ -90,17 +99,20 @@ const ProjectCard: React.FC<{ project: Project; index: number }> = ({
 }) => {
   let projectImage;
   switch (project.backdropImage) {
-    case "task_manager":
-      projectImage = task_manager;
+    case "task_management_application":
+      projectImage = task_management_application;
       break;
-    case "ttc_refractor":
-      projectImage = ttc_refractor;
+    case "ttc_refactor":
+      projectImage = ttc_refactor;
       break;
-    case "personal_website":
-      projectImage = personal_website;
+    case "personal_portfolio_website":
+      projectImage = personal_portfolio_website;
       break;
     case "openrice_canada":
       projectImage = openrice_canada;
+      break;
+    case "openrice_canada_more_features":
+      projectImage = openrice_canada_more_features;
       break;
   }
 
@@ -108,7 +120,7 @@ const ProjectCard: React.FC<{ project: Project; index: number }> = ({
     <motion.div
       variants={fadeIn("up", "spring", index * 0.5, 0.75)}
       key={project.name}
-      className="relative border-2 border-gray-100 rounded-lg shadow-xl min-h-[390px] mx-3 md:mx-0 dark:shadow-secondary"
+      className="relative border-2 border-gray-100 rounded-lg shadow-xl min-h-[390px] lg:min-h-[430px] mx-3 md:mx-0 dark:shadow-dark-project-card"
     >
       {projectImage && (
         <div

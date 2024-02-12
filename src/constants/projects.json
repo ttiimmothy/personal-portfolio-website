@@ -1,10 +1,10 @@
 [
   {
-    "backdropImage": "task_manager",
-    "name": "Task Manager",
-    "description": "Task Manager is an application that help task status management.",
-    "originLink": "https://ttiimmothy.github.io/task-manager",
-    "githubLink": "https://github.com/ttiimmothy/task-manager",
+    "backdropImage": "task_management_application",
+    "name": "Task Management Application",
+    "description": "Task Management Application is an application that help task status management.",
+    "originLink": "https://ttiimmothy.github.io/task-management-application",
+    "githubLink": "https://github.com/ttiimmothy/task-management-application",
     "stacks": ["react", "vite", "tailwind", "reactbootstrap"],
     "stackLinks": {
       "react": "https://react.dev/",
@@ -14,11 +14,11 @@
     }
   },
   {
-    "backdropImage": "ttc_refractor",
-    "name": "TTC Refractor",
-    "description": "TTC Refractor is a real-time transit application that provides estimated arrival times (eta) for TTC buses and streetcars.",
-    "originLink": "https://ttiimmothy.github.io/ttc-refractor",
-    "githubLink": "https://github.com/ttiimmothy/ttc-refractor",
+    "backdropImage": "ttc_refactor",
+    "name": "TTC Refactor",
+    "description": "TTC Refactor is a real-time transit application that provides estimated arrival times (eta) for TTC buses and streetcars.",
+    "originLink": "https://ttiimmothy.github.io/ttc-refactor",
+    "githubLink": "https://github.com/ttiimmothy/ttc-refactor",
     "stacks": ["react", "fluentui", "redux", "reactrouter"],
     "stackLinks": {
       "react": "https://react.dev/",
@@ -28,11 +28,11 @@
     }
   },
   {
-    "backdropImage": "personal_website",
-    "name": "Personal Portfolio",
+    "backdropImage": "personal_portfolio_website",
+    "name": "Personal Portfolio Website",
     "description": "A single page web application to know about me. Stay tuned.",
     "originLink": "https://ttiimmothy.com",
-    "githubLink": "https://github.com/ttiimmothy/portfolio",
+    "githubLink": "https://github.com/ttiimmothy/personal-portfolio-website",
     "stacks": ["react", "next", "tailwind"],
     "stackLinks": {
       "react": "https://react.dev/",
@@ -45,8 +45,8 @@
     "name": "Openrice Canada",
     "description": "Openrice Canada is an application that introduces the closest restaurant that suits your needs.",
     "originLink": "https://openricecan.netlify.app/",
-    "githubLink": "https://github.com/cantek-openrice/openrice-frontend",
-    "backendGithubLink": "https://github.com/cantek-openrice/openrice-backend",
+    "githubLink": "https://github.com/openrice-canada/openrice-frontend",
+    "backendGithubLink": "https://github.com/openrice-canada/openrice-backend",
     "stacks": ["react", "tailwind", "redux", "reactrouter", "java", "spring"],
     "stackLinks": {
       "react": "https://react.dev/",
@@ -55,6 +55,23 @@
       "reactrouter": "https://reactrouter.com/en/main",
       "java": "https://www.java.com/en/",
       "spring": "https://spring.io/"
+    }
+  },
+  {
+    "backdropImage": "openrice_canada_more_features",
+    "name": "Openrice Canada (more features)",
+    "description": "Openrice Canada is an application that introduces the closest restaurant that suits your needs.",
+    "originLink": "https://openricecanadafrontend.vercel.app/",
+    "githubLink": "https://github.com/openrice-canada/openrice-canada-frontend",
+    "backendGithubLink": "https://github.com/openrice-canada/openrice-canada-backend",
+    "stacks": ["react", "tailwind", "redux", "reactrouter", "nodejs", "nestjs"],
+    "stackLinks": {
+      "react": "https://react.dev/",
+      "tailwind": "https://tailwindcss.com/",
+      "redux": "https://redux-toolkit.js.org/",
+      "reactrouter": "https://reactrouter.com/en/main",
+      "nodejs": "https://nodejs.org/en/about",
+      "nestjs": "https://nestjs.com/"
     }
   }
 ]

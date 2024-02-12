@@ -32,8 +32,6 @@ Here are the basic steps to get started with your first contribution. Please rea
 
 We strive to maintain high quality code to make the utilities in the repository easy to understand, use, and extend. We also work hard to maintain a friendly and constructive environment. We've found that having clear expectations on the development process and consistent style helps to ensure everyone can contribute and collaborate effectively.
 
-Apart from the official [Code of Conduct](CODE_OF_CONDUCT.md), in Recommenders team we adopt the following behaviors, to ensure a great working environment:
-
 #### Do not point fingers
 Let’s be constructive.
 
