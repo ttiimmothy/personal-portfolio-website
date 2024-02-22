@@ -20,7 +20,7 @@
     "@react-three/drei": "^9.97.5",
     "@react-three/fiber": "^8.15.16",
     "@vercel/analytics": "^1.1.1",
-    "@vercel/speed-insights": "^1.0.9",
+    "@vercel/speed-insights": "^1.0.10",
     "animejs": "^3.2.2",
     "framer-motion": "^11.0.3",
     "next": "14.0.4",
