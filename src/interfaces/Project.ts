@@ -2,7 +2,7 @@ export interface Project {
   backdropImage: string;
   name: string;
   description: string;
-  originLink: string;
+  originLink?: string;
   githubLink: string;
   backendGithubLink?: string;
   stacks: string[];

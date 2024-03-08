@@ -44,7 +44,6 @@
     "backdropImage": "openrice_canada",
     "name": "Openrice Canada",
     "description": "Openrice Canada is an application that introduces the closest restaurant that suits your needs.",
-    "originLink": "https://openricecan.netlify.app/",
     "githubLink": "https://github.com/openrice-canada/openrice-frontend",
     "backendGithubLink": "https://github.com/openrice-canada/openrice-backend",
     "stacks": ["react", "tailwind", "redux", "reactrouter", "java", "spring"],
