@@ -8,7 +8,7 @@ const HomeSection: React.FC = () => {
     <section id="home" className="relative h-screen flex items-center">
       <div className="flex flex-col lg:flex-row justify-center items-center w-full">
         <div className="flex flex-col items-center gap-4 text-center">
-          <p className="text-4xl dark:text-white font-bold tracking-wider whitespace-nowrap">
+          <p className="text-3xl home-section-sm:text-4xl dark:text-white font-bold tracking-wider whitespace-nowrap">
             Hi There I am Timothy
           </p>
           <div className="dark:text-white font-bold tracking-wider flex flex-col gap-3">

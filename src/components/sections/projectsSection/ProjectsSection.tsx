@@ -120,7 +120,13 @@ const ProjectCard: React.FC<{ project: Project; index: number }> = ({
     <motion.div
       variants={fadeIn("up", "spring", index * 0.5, 0.75)}
       key={project.name}
-      className="relative border-2 border-gray-100 rounded-lg shadow-xl min-h-[390px] lg:min-h-[430px] mx-3 md:mx-0 dark:shadow-dark-project-card"
+      className={`relative border-2 border-gray-100 rounded-lg shadow-xl ${
+        project.name === "Openrice Canada (more features)"
+          ? "min-h-[470px] sm:min-h-[430px] lg:min-h-[470px]"
+          : project.name === "Openrice Canada"
+          ? "min-h-[430px] lg:min-h-[470px]"
+          : "min-h-[390px] lg:min-h-[430px]"
+      } mx-3 md:mx-0 dark:shadow-dark-project-card`}
     >
       {projectImage && (
         <div
@@ -154,16 +160,18 @@ const ProjectCard: React.FC<{ project: Project; index: number }> = ({
         </div>
       )}
       <div className="flex flex-col gap-2 p-4">
-        <p className="text-xl font-semibold">{project.name}</p>
-        <p className="text-sm text-gray-600 dark:text-gray-400">
+        <div className="text-xl font-semibold">{project.name}</div>
+        <div className="text-sm text-gray-600 dark:text-gray-400">
           {project.description}
-        </p>
+        </div>
         <div
-          className={`absolute ${
-            project.backendGithubLink
-              ? "md:bottom-[5.4rem] bottom-14"
+          className={`absolute pr-4 ${
+            project.name === "Openrice Canada (more features)"
+              ? "project-section-more-features-openrice-sm:bottom-14 md:bottom-[5.4rem] project-section-more-features-openrice-md:bottom-14 lg:bottom-[5.4rem] bottom-[5.4rem]"
+              : project.name === "Openrice Canada"
+              ? "project-section-openrice-sm:bottom-14 md:bottom-[5.4rem] project-section-openrice-md:bottom-14 lg:bottom-[5.4rem] bottom-[5.4rem]"
               : "bottom-14"
-          } flex gap-4`}
+          } flex flex-wrap gap-4`}
         >
           {project.stacks.map((stack, index) => (
             <ProjectStack
@@ -173,7 +181,7 @@ const ProjectCard: React.FC<{ project: Project; index: number }> = ({
             />
           ))}
         </div>
-        <div className="absolute bottom-4 flex items-center gap-2 flex-wrap">
+        <div className="absolute bottom-4 flex items-center gap-2 flex-wrap pr-4">
           {project.originLink && (
             <Link
               href={project.originLink}
@@ -190,7 +198,7 @@ const ProjectCard: React.FC<{ project: Project; index: number }> = ({
               target="_blank"
             >
               <IoLogoGithub size={20} />
-              Source Code (frontend)
+              Source Code 1
             </Link>
           ) : (
             project.githubLink &&
@@ -212,7 +220,7 @@ const ProjectCard: React.FC<{ project: Project; index: number }> = ({
               target="_blank"
             >
               <IoLogoGithub size={20} />
-              Source Code (backend)
+              Source Code 2
             </Link>
           )}
         </div>
