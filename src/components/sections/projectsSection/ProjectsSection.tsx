@@ -170,6 +170,8 @@ const ProjectCard: React.FC<{ project: Project; index: number }> = ({
               ? "project-section-more-features-openrice-sm:bottom-14 md:bottom-[5.4rem] project-section-more-features-openrice-md:bottom-14 lg:bottom-[5.4rem] bottom-[5.4rem]"
               : project.name === "Openrice Canada"
               ? "project-section-openrice-sm:bottom-14 md:bottom-[5.4rem] project-section-openrice-md:bottom-14 lg:bottom-[5.4rem] bottom-[5.4rem]"
+              : project.backendGithubLink
+              ? "md:bottom-[5.4rem] bottom-14"
               : "bottom-14"
           } flex flex-wrap gap-4`}
         >
