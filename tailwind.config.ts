@@ -33,6 +33,11 @@ const config: Config = {
       },
       screens: {
         xs: "450px",
+        "project-section-openrice-sm": "402px",
+        "project-section-more-features-openrice-sm": "466px",
+        "project-section-openrice-md": "806px",
+        "project-section-more-features-openrice-md": "947px",
+        "home-section-sm": "413px",
       },
       width: {
         aside: "min(75vw,300px)",
