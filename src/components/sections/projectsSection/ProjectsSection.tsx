@@ -79,7 +79,10 @@ const ProjectStack: React.FC<{ stack: string; link: string | undefined }> = ({
         alt="stack"
         width={20}
         height={20}
-        className="h-[28px] w-auto object-cover"
+        className={`h-[28px] w-auto object-cover ${
+          (stackImage === fluentui || stackImage === reactrouter) &&
+          "p-0.5 rounded-sm dark:bg-zinc-800"
+        }`}
       />
     </Link>
   ) : (
