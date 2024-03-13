@@ -130,7 +130,7 @@ const ProjectCard: React.FC<{ project: Project; index: number }> = ({
     >
       {projectImage && (
         <div
-          className={`h-[160px] w-full rounded-tl-lg rounded-tr-lg cursor-pointer ${styles["project-image-container"]} flex overflow-hidden`}
+          className={`h-[160px] w-full rounded-tl-lg rounded-tr-lg ${styles["project-image-container"]} flex overflow-hidden`}
         >
           {project.originLink ? (
             <Link
@@ -143,7 +143,7 @@ const ProjectCard: React.FC<{ project: Project; index: number }> = ({
                 alt="project"
                 width={300}
                 height={200}
-                className={`h-[100%] w-[100%] object-cover ${styles["project-image-hover"]}`}
+                className={`h-[100%] w-[100%] object-cover cursor-pointer ${styles["project-image-hover"]}`}
                 priority
               />
             </Link>
@@ -153,7 +153,7 @@ const ProjectCard: React.FC<{ project: Project; index: number }> = ({
               alt="project"
               width={300}
               height={200}
-              className={`h-[100%] w-[100%] object-cover ${styles["project-image-hover"]}`}
+              className={`h-[100%] w-[100%] object-cover`}
               priority
             />
           )}
