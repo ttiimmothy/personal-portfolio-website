@@ -37,7 +37,7 @@ This project was inspired by some websites. While this project is not a direct c
 
 <https://portfolio-website-three-eta.vercel.app/>
 
-<https://hoipangcheung.github.io/>
+<!-- <https://hoipangcheung.github.io/> -->
 
 <https://v4.brittanychiang.com/>
 
