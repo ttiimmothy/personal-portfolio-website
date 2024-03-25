@@ -10,8 +10,9 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
-  if (["404"].some((errorCode) => router.pathname.includes(errorCode)))
+  if (["404"].some((errorCode) => router.pathname.includes(errorCode))) {
     return <Component {...pageProps} />;
+  }
 
   return (
     <ThemeProvider attribute="class" defaultTheme="light">
