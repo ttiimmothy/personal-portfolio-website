@@ -32,4 +32,4 @@ yarn-error.log*
 
 **/another/
 vercel.json
-dependabot.yml
+dependabot_old.yml
