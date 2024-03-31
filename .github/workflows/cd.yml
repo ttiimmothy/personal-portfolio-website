@@ -15,6 +15,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Install bun
+        uses: oven-sh/setup-bun@v1
       - name: Install and Build
         env:
           NEXT_PUBLIC_EMAILJS_SERVICE_ID: ${{ secrets.EMAILJS_SERVICE_ID }}
@@ -23,8 +25,8 @@ jobs:
           NEXT_PUBLIC_TO_NAME: ${{ secrets.TO_NAME }}
           NEXT_PUBLIC_TO_EMAIL_ADDRESS: ${{ secrets.TO_EMAIL_ADDRESS }}
         run: |
-          npm ci --legacy-peer-deps
-          npm run build
+          bun install
+          bun run build
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
