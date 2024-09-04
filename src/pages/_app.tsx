@@ -8,6 +8,8 @@ import Head from "next/head";
 import { ThemeProvider } from "next-themes";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { colors } from "@/components/color/default";
+import { cn } from "@/utils/classNames";
 
 export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
@@ -17,7 +19,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <ThemeProvider attribute="class" defaultTheme="light">
-      <div className={`min-h-screen bg-slate-50 dark:bg-zinc-900`}>
+      <div className={cn(`min-h-screen ${colors.lightBackground} dark:${colors.darkBackground}`)}>
         <Head>
           <title>Personal Portfolio</title>
         </Head>

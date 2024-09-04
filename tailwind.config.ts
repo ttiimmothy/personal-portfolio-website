@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import { colors } from "./src/components/color/default";
 
 const config: Config = {
   darkMode: "class",
@@ -45,6 +46,7 @@ const config: Config = {
       zIndex: {
         "99": "99",
       },
+      backgroundColor: colors
     },
   },
   plugins: [],

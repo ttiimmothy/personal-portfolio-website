@@ -10,6 +10,9 @@ import {
 } from "@/assets";
 import { ProjectStack } from "./ProjectStack";
 import { motion } from "framer-motion";
+import { fadeIn } from "@/components/utils/motions";
+import { colors } from '@/components/color/default';
+import { cn } from '@/utils/classNames';
 
 const ProjectCard: React.FC<{ project: Project; index: number }> = ({
   project,
@@ -33,16 +36,17 @@ const ProjectCard: React.FC<{ project: Project; index: number }> = ({
 
   return (
     <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{
-        type: "spring",
-        delay: 0.1,
-        duration: 0.75,
-        ease: "easeOut",
-      }}
+      variants={fadeIn("up", "spring", index * 0.5, 0.75)}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.25 }}
       key={project.name}
-      className="relative border-2 border-gray-100 rounded-lg shadow-xl min-h-[390px] lg:min-h-[430px] max-w-[400px] mx-3 md:mx-0 dark:shadow-dark-project-card"
+      className={cn(
+        "relative border-2 border-gray-100 rounded-lg shadow-xl min-h-[390px] lg:min-h-[430px] max-w-[400px] mx-3 md:mx-0",
+        colors.lightBackground,
+        `dark:${colors.darkBackground}`,
+        "dark:shadow-dark-project-card"
+      )}
     >
       {projectImage && (
         <div
