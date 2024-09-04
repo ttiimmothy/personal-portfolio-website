@@ -4,7 +4,6 @@ import { IoLogoGithub } from "react-icons/io5";
 import { Project } from "@/interfaces/Project";
 import {
   openrice_canada,
-  openrice_canada_more_features,
   personal_portfolio_website,
   task_management_application,
   ttc_refactor,
@@ -30,9 +29,6 @@ const ProjectCard: React.FC<{ project: Project; index: number }> = ({
     case "openrice_canada":
       projectImage = openrice_canada;
       break;
-    case "openrice_canada_more_features":
-      projectImage = openrice_canada_more_features;
-      break;
   }
 
   return (
@@ -45,7 +41,6 @@ const ProjectCard: React.FC<{ project: Project; index: number }> = ({
         duration: 0.75,
         ease: "easeOut",
       }}
-      // variants={fadeIn("up", "spring", 0.5, 0.75)}
       key={project.name}
       className="relative border-2 border-gray-100 rounded-lg shadow-xl min-h-[390px] lg:min-h-[430px] max-w-[400px] mx-3 md:mx-0 dark:shadow-dark-project-card"
     >
