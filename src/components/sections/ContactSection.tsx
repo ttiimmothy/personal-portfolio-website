@@ -66,8 +66,8 @@ const ContactSection: React.FC = () => {
   };
 
   return (
-    <div className="overflow-hidden xl:max-w-[650px] xl:mx-auto lg:min-h-[65vh]">
-      <div className="md:mx-auto md:w-[350px] mx-3">
+    <div className="overflow-hidden xl:max-w-[650px] xl:mx-auto">
+      <div className="mx-auto w-[350px]">
         <motion.div variants={textVariant()}>
           <p className={`${styles.sectionSubText} text-center`}>Get in touch</p>
         </motion.div>
