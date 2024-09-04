@@ -6,10 +6,12 @@ import {
   IoLogoLinkedin,
   IoMail,
 } from "react-icons/io5";
+import { colors } from "@/components/color/default";
+import { cn } from "@/utils/classNames";
 
 const Footer: React.FC = () => {
   return (
-    <footer className={`border-t bg-slate-50 dark:bg-zinc-900`}>
+    <footer className={cn(`border-t ${colors.lightBackground} dark:${colors.darkBackground}`)}>
       <div className="flex flex-col lg:flex-row items-center lg:justify-between justify-center h-24 lg:w-[768px] lg:mx-auto">
         <div className="flex items-center gap-2">
           <Link
