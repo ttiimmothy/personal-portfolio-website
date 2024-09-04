@@ -47,33 +47,29 @@
     ]
   },
   {
-    "title": "Backend Developer",
+    "title": "Backend Engineer",
     "company_name": "Ecosa",
     "company_url": "https://www.ecosa.com/",
     "icon": "ecosa",
     "iconBg": "#10318E",
     "date": "Jun 2021",
     "points": [
-      "Improved the search function performance in CMS to reduce the SQL query execution time by database by 40%",
-      "Developed a notification function for weekly shipments in Slack to keep track on stock capacity",
-      "Troubleshot and optimized the SQL queries to solve the Unicode standard issues in the Japanese CMS system"
-    ],
-    "highlights": [
-      "Learnt PHP without any prior PHP experiences and finished the CMS system modifications"
+      "Improved the search function performance in CMS to reduce the SQL query execution time in the relational database by 40%",
+      "Developed a notification function for weekly shipments to keep track on stock capacity",
+      "Diagnosed and troubleshoot server issues for the high-traffic web applications utilizing tools such as AWS CloudWatch, reducing system downtime by 30%"
     ]
   },
   {
-    "title": "Software Developer",
+    "title": "Software Engineer",
     "company_name": "Cable Television",
     "company_url": "https://www.i-cable.com/",
     "icon": "cable",
     "iconBg": "#E6DEDD",
     "date": "Aug 2021",
     "points": [
-      "Designed and developed a new company website with Figma and Next.js",
-      "Deployed a website on AWS for better maintenance and cost reductions",
-      "Performed Search Engine Optimization of the company website, and utilized CMS system to increase tracking accuracy by 60%",
-      "Redesigned the company mobile app with React Native and GraphQL to increase data customization for app rendering by 80%"
+      "Archived system integration for a microservices architecture, implementing resilient distributed systems that enhanced fault tolerance by 40%, leveraging Docker and Kubernetes over a period of 6 months",
+      "Redesigned a mobile app with React Native and GraphQL to increase data customization for app rendering by 80%",
+      "Facilitated cloud technologies adoption by migrating the applications to cloud technologies (AWS), achieving a 20% reduction in operational costs and enhancing system reliability"
     ]
   },
   {
@@ -84,10 +80,9 @@
     "iconBg": "#D8F3FA",
     "date": "Aug 2022",
     "points": [
-      "Increased the speed of getting data from database in the store auditing page by 90%",
-      "Rewrote the SQL queries to enhance the performance of the app by getting more than 100% improvement in the loading speed",
-      "Added new features (like filtering and employee borrowing) in one of the retail solutions (the retail dashboard)",
-      "Cooperated with backend developers on changing the web APIs to headless APIs and DevOps developers to update the app daily in an agile environment"
+      "Spearheaded project execution for a web application with React by integrating Agile methodologies and utilizing Azure Boards for task tracking",
+      "Cooperated with backend developers and scrum master on developing headless APIs to build performant solutions",
+      "Developed main components of the Xamarin mobile application and a high quality React Native mobile application"
     ]
   },
   {

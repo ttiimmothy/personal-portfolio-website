@@ -2,6 +2,7 @@ import type { AppProps } from "next/app";
 import "@/globals.css";
 import "@/index.css";
 import "@/vertical-timeline-component/style.min.css";
+import "@/projectsSection.css";
 import { useRouter } from "next/router";
 import Head from "next/head";
 import { ThemeProvider } from "next-themes";
@@ -18,7 +19,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <ThemeProvider attribute="class" defaultTheme="light">
       <div className={`min-h-screen bg-slate-50 dark:bg-zinc-900`}>
         <Head>
-          <title>Timothy</title>
+          <title>Personal Portfolio</title>
         </Head>
         <Component {...pageProps} />
         <Analytics />

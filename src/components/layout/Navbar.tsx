@@ -111,7 +111,7 @@ const Navbar: React.FC = () => {
             </Link>
             <Link
               target="_blank"
-              href="/timothy_resume.pdf"
+              href="/Timothy Resume.pdf"
               className="relative flex items-center p-1.5 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-md"
             >
               <BiSolidFilePdf size={28} className="dark:text-gray-50" />
@@ -151,7 +151,7 @@ const Navbar: React.FC = () => {
               <NavButton id="contact" label="Contact" />
               <Link
                 target="_blank"
-                href="/timothy_resume.pdf"
+                href="/Timothy Resume.pdf"
                 className="flex relative items-center p-1.5 px-4 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-md"
                 rel="noopener noreferrer"
               >
