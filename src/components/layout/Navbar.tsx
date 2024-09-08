@@ -74,7 +74,8 @@ const Navbar: React.FC = () => {
           "invisible lg:visible fixed top-0 left-0 w-full flex justify-center",
           "bg-light-bg dark:bg-dark-bg",
           "px-5 z-40",
-          `${scrolled && "shadow-lg opacity-90"}`
+          `${scrolled && "shadow-lg opacity-90"}`,
+          "bg-color-transition"
         )}
       >
         <div className="relative w-[1024px] mx-auto py-4 flex items-center justify-between">
@@ -130,7 +131,8 @@ const Navbar: React.FC = () => {
           "visible lg:invisible fixed top-0 left-0 w-full flex justify-center",
           "bg-light-bg dark:bg-dark-bg",
           "px-5 z-40",
-          `${scrolled && !showMobileMenu && "shadow-lg opacity-90"}`
+          `${scrolled && !showMobileMenu && "shadow-lg opacity-90"}`,
+          "bg-color-transition"
         )}
       >
         <div className="relative w-[90vw] mx-auto py-4 flex items-center justify-between">

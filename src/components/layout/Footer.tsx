@@ -10,7 +10,7 @@ import { cn } from "@/utils/classNames";
 
 const Footer: React.FC = () => {
   return (
-    <footer className={cn("border-t bg-light-bg dark:bg-dark-bg")}>
+    <footer className={cn("border-t bg-light-bg dark:bg-dark-bg bg-color-transition")}>
       <div className="flex flex-col lg:flex-row items-center lg:justify-between justify-center h-24 lg:w-[768px] lg:mx-auto">
         <div className="flex items-center gap-2">
           <Link

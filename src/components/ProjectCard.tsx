@@ -44,7 +44,8 @@ const ProjectCard: React.FC<{ project: Project; index: number }> = ({
       className={cn(
         "relative border-2 border-gray-100 rounded-lg shadow-xl min-h-[390px] lg:min-h-[430px] max-w-[400px] mx-3 md:mx-0",
         "bg-light-bg dark:bg-dark-bg",
-        "dark:shadow-dark-project-card"
+        "dark:shadow-dark-project-card",
+        "bg-color-transition"
       )}
     >
       {projectImage && (
