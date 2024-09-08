@@ -50,8 +50,7 @@ const PageLoader: React.FC<{
     <div
       className={cn(
         "loader flex justify-center items-center fix inset-0 w-screen h-screen",
-        colors.lightLoadingBackground,
-        `dark:${colors.darkLoadingBackground}`,
+        "bg-light-loading-bg dark:bg-dark-loading-bg",
         "z-99"
       )}
     >

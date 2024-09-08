@@ -46,7 +46,12 @@ const config: Config = {
       zIndex: {
         "99": "99",
       },
-      backgroundColor: colors
+      backgroundColor: {
+        'light-bg': colors.lightBackground,
+        'dark-bg': colors.darkBackground,
+        'light-loading-bg': colors.lightLoadingBackground,
+        'dark-loading-bg': colors.darkLoadingBackground,
+      }
     },
   },
   plugins: [],
