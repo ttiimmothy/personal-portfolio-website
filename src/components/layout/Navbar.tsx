@@ -72,8 +72,7 @@ const Navbar: React.FC = () => {
       <nav
         className={cn(
           "invisible lg:visible fixed top-0 left-0 w-full flex justify-center",
-          colors.lightBackground,
-          `dark:${colors.darkBackground}`,
+          "bg-light-bg dark:bg-dark-bg",
           "px-5 z-40",
           `${scrolled && "shadow-lg opacity-90"}`
         )}
@@ -129,8 +128,7 @@ const Navbar: React.FC = () => {
       <nav
         className={cn(
           "visible lg:invisible fixed top-0 left-0 w-full flex justify-center",
-          colors.lightBackground,
-          `dark:${colors.darkBackground}`,
+          "bg-light-bg dark:bg-dark-bg",
           "px-5 z-40",
           `${scrolled && !showMobileMenu && "shadow-lg opacity-90"}`
         )}
@@ -145,11 +143,12 @@ const Navbar: React.FC = () => {
               menuOpen={showMobileMenu}
             />
             <div
-              className={`fixed top-0 right-0 h-screen w-aside flex justify-center items-center flex-col bg-slate-50 dark:bg-zinc-900 gap-4 z-50 shadow-aside-width ${
-                showMobileMenu
-                  ? "visible translate-x-0"
-                  : "invisible translate-x-[100vw]"
-              } navbar-menu-animation`}
+              className={cn(
+                "fixed top-0 right-0 h-screen w-aside flex justify-center items-center flex-col",
+                "bg-light-bg dark:bg-dark-bg",
+                "gap-4 z-50 shadow-aside-width",
+                `${showMobileMenu ? "visible translate-x-0" : "invisible translate-x-[100vw]"} navbar-menu-animation`
+              )}
             >
               <div className="absolute top-5 left-10">
                 <ThemeToggler />
