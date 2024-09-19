@@ -19,7 +19,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <ThemeProvider attribute="class" defaultTheme="light">
-      <div className={cn(`min-h-screen ${colors.lightBackground} dark:${colors.darkBackground}`)}>
+      <div className={cn("min-h-screen bg-light-bg dark:bg-dark-bg bg-color-transition")}>
         <Head>
           <title>Personal Portfolio</title>
         </Head>

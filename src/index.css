@@ -18,3 +18,6 @@ body.blurring main > * {
 .navbar-menu-animation {
   transition: var(--nav-menu-transition);
 }
+.bg-color-transition {
+  transition: var(--bg-color-transition);
+}
