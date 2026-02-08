@@ -97,7 +97,7 @@ const ProjectCard: React.FC<{ project: Project; index: number }> = ({
             <ProjectStack
               stack={stack}
               key={index}
-              link={project.stackLinks[stack]}
+              link={project.stackLinks && project.stackLinks[stack]}
             />
           ))}
         </div>
