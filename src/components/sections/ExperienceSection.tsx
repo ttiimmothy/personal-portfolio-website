@@ -15,6 +15,7 @@ import {
   tecky,
   cable,
   storeforce,
+  computacenter
 } from "@/assets";
 import { textVariant } from "../utils/motions";
 import { styles } from "../utils/styles";
@@ -46,6 +47,9 @@ const ExperienceCard: React.FC<{ experience: Experience }> = ({
       break;
     case "storeforce":
       companyIcon = storeforce;
+      break;
+    case "computacenter":
+      companyIcon = computacenter;
       break;
   }
 

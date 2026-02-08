@@ -1,5 +1,32 @@
 [
   {
+    "backdropImage": "ttc_refactor",
+    "name": "TTC ETA Tracker",
+    "description": "TTC ETA Tracker is a real-time transit application that provides estimated arrival times (eta) for TTC buses and streetcars.",
+    "originLink": "https://ttiimmothy.github.io/ttc-refactor",
+    "githubLink": "https://github.com/ttiimmothy/ttc-refactor",
+    "stacks": ["react", "redux", "reactrouter"],
+    "stackLinks": {
+      "react": "https://react.dev/",
+      "redux": "https://redux-toolkit.js.org/",
+      "reactrouter": "https://reactrouter.com/en/main"
+    }
+  },
+  {
+    "backdropImage": "expense_splitter",
+    "name": "Expense Splitter",
+    "description": "Expense Splitter is a full-stack application for splitting expenses with friends and family. Built with React, Node.js, TypeScript, and PostgreSQL.",
+    "originLink": "https://expense-splitter-jade.vercel.app/",
+    "githubLink": "https://github.com/ttiimmothy/expense-splitter"
+  },
+  {
+    "backdropImage": "fitness_habit_tracker",
+    "name": "Fitness Habit Tracker",
+    "description": "Fitness Habit Tracker is a full-stack application for tracking fitness habits and building healthy routines. Built with Astro, React, FastAPI, and PostgreSQL.",
+    "originLink": "https://fitness-habit-tracker.vercel.app/",
+    "githubLink": "https://github.com/ttiimmothy/fitness-habit-tracker"
+  },
+  {
     "backdropImage": "task_management_application",
     "name": "Task Manager",
     "description": "Task Manager is an application that help task status management.",
@@ -13,16 +40,16 @@
     }
   },
   {
-    "backdropImage": "ttc_refactor",
-    "name": "TTC ETA Tracker",
-    "description": "TTC ETA Tracker is a real-time transit application that provides estimated arrival times (eta) for TTC buses and streetcars.",
-    "originLink": "https://ttiimmothy.github.io/ttc-refactor",
-    "githubLink": "https://github.com/ttiimmothy/ttc-refactor",
-    "stacks": ["react", "redux", "reactrouter"],
+    "backdropImage": "personal_portfolio_website",
+    "name": "Personal Portfolio Website",
+    "description": "A single page web application to know about me. Stay tuned.",
+    "originLink": "https://ttiimmothy.com",
+    "githubLink": "https://github.com/ttiimmothy/personal-portfolio-website",
+    "stacks": ["react", "next", "tailwind"],
     "stackLinks": {
       "react": "https://react.dev/",
-      "redux": "https://redux-toolkit.js.org/",
-      "reactrouter": "https://reactrouter.com/en/main"
+      "next": "https://nextjs.org/",
+      "tailwind": "https://tailwindcss.com/"
     }
   },
   {
@@ -37,19 +64,6 @@
       "redux": "https://redux-toolkit.js.org/",
       "reactrouter": "https://reactrouter.com/en/main",
       "nestjs": "https://nestjs.com/"
-    }
-  },
-  {
-    "backdropImage": "personal_portfolio_website",
-    "name": "Personal Portfolio Website",
-    "description": "A single page web application to know about me. Stay tuned.",
-    "originLink": "https://ttiimmothy.com",
-    "githubLink": "https://github.com/ttiimmothy/personal-portfolio-website",
-    "stacks": ["react", "next", "tailwind"],
-    "stackLinks": {
-      "react": "https://react.dev/",
-      "next": "https://nextjs.org/",
-      "tailwind": "https://tailwindcss.com/"
     }
   }
 ]
