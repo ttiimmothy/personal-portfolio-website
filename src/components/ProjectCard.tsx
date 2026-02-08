@@ -7,6 +7,8 @@ import {
   personal_portfolio_website,
   task_management_application,
   ttc_refactor,
+  expense_splitter,
+  fitness_habit_tracker
 } from "@/assets";
 import { ProjectStack } from "./ProjectStack";
 import { motion } from "framer-motion";
@@ -31,6 +33,12 @@ const ProjectCard: React.FC<{ project: Project; index: number }> = ({
       break;
     case "openrice_canada":
       projectImage = openrice_canada;
+      break;
+    case "expense_splitter":
+      projectImage = expense_splitter;
+      break;
+    case "fitness_habit_tracker":
+      projectImage = fitness_habit_tracker;
       break;
   }
 
@@ -85,11 +93,11 @@ const ProjectCard: React.FC<{ project: Project; index: number }> = ({
           {project.description}
         </div>
         <div className="absolute pr-4 bottom-14 flex flex-wrap gap-4">
-          {project.stacks.map((stack, index) => (
+          {project.stacks && project.stacks.map((stack, index) => (
             <ProjectStack
               stack={stack}
               key={index}
-              link={project.stackLinks[stack]}
+              link={project.stackLinks && project.stackLinks[stack]}
             />
           ))}
         </div>

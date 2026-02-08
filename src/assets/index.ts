@@ -16,12 +16,15 @@ import ecosa from "./company/ecosa.png";
 import tecky from "./company/tecky.png";
 import cable from "./company/cable.png";
 import storeforce from "./company/storeforce.png";
+import computacenter from "./company/computacenter.png";
 
 import personal_portfolio_website from "./projects/personal_portfolio_website.png";
 import task_management_application from "./projects/task_management_application.png";
 import ttc_refactor from "./projects/ttc_refactor.png";
 import openrice_canada from "./projects/openrice_canada.png";
 import openrice_canada_more_features from "./projects/openrice_canada_more_features.png";
+import expense_splitter from "./projects/expense_splitter.png";
+import fitness_habit_tracker from "./projects/fitness_habit_tracker.png";
 
 import tailwind from "./technology/stacks/tailwind.png";
 import fluentui from "./technology/stacks/fluentui.png";
@@ -52,11 +55,14 @@ export {
   tecky,
   cable,
   storeforce,
+  computacenter,
   personal_portfolio_website,
   task_management_application,
   ttc_refactor,
   openrice_canada,
   openrice_canada_more_features,
+  expense_splitter,
+  fitness_habit_tracker,
   tailwind,
   fluentui,
   next,
