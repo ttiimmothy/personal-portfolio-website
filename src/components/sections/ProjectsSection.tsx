@@ -3,7 +3,7 @@ import projects from "@/constants/projects.json";
 import { motion } from "framer-motion";
 import { fadeIn, textVariant, staggerContainer } from "@/components/utils/motions";
 import { styles as utilStyles } from "@/components/utils/styles";
-import { IoIosArrowDown } from "react-icons/io";
+import { IoIosArrowUp, IoIosArrowDown } from "react-icons/io";
 import { useState } from "react";
 import ProjectCard from "../ProjectCard";
 
@@ -40,7 +40,30 @@ const ProjectsSection: React.FC = () => {
             />
           ))}
       </motion.div>
-      {!showMoreProjects && (
+      {showMoreProjects ?
+      (
+        <motion.div
+          className="w-full flex flex-col items-center pt-10 cursor-pointer"
+          onClick={() => {
+            setShowMoreProjects(false);
+          }}
+          variants={fadeIn("", "", 1.1, 1)}
+        >
+          <motion.div
+            animate={{ y: [0, -20], opacity: [1, 0] }}
+            transition={{
+              ease: "easeIn",
+              repeat: Infinity,
+              duration: 1,
+              repeatDelay: 0.5,
+            }}
+          >
+            <IoIosArrowUp size={30} />
+          </motion.div>
+          <div>hide</div>
+        </motion.div>
+      )
+      : (
         <motion.div
           className="w-full flex flex-col items-center pt-10 cursor-pointer"
           onClick={() => {
