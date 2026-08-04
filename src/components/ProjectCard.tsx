@@ -10,10 +10,8 @@ import {
   expense_splitter,
   fitness_habit_tracker
 } from "@/assets";
-import { ProjectStack } from "./ProjectStack";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/components/utils/motions";
-import { colors } from '@/components/color/default';
 import { cn } from '@/utils/classNames';
 
 const ProjectCard: React.FC<{ project: Project; index: number }> = ({
