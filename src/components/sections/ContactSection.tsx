@@ -142,7 +142,7 @@ const ContactSection: React.FC = () => {
           <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
             <div>
               <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
-                Let's talk
+                Let&apos;s talk
               </h2>
               <p className="text-muted-foreground mb-8 max-w-xl mx-auto">
                 I build production multi-agent systems. If you have an interesting problem where AI is the right tool — let us talk
