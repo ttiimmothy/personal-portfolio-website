@@ -35,7 +35,7 @@
   .contact-bg-primary { background-color: hsl(var(--primary)); }
   .text-primary-foreground { color: hsl(var(--primary-foreground)); }
   .border-border { border-color: hsl(var(--border)); }
-  .border-primary\/50 { border-color: hsl(var(--primary) / 0.5); }
+  .border-primary\/10 { border-color: hsl(var(--primary) / 0.1); }
 }
 
 * {

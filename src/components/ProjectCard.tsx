@@ -92,13 +92,14 @@ const ProjectCard: React.FC<{ project: Project; index: number }> = ({
         <div className="text-sm text-gray-600 dark:text-gray-400">
           {project.description}
         </div>
-        <div className="absolute pr-4 bottom-14 flex flex-wrap gap-4">
+        <div className="absolute pr-4 bottom-14 flex flex-wrap gap-1.5">
           {project.stacks && project.stacks.map((stack, index) => (
-            <ProjectStack
-              stack={stack}
+            <span
               key={index}
-              link={project.stackLinks && project.stackLinks[stack]}
-            />
+              className="rounded-full border dark:border-white/10 bg-white/[0.03] px-2.5 py-1 text-xs dark:text-neutral-300"
+            >
+              {stack}
+            </span>
           ))}
         </div>
         <div className="absolute bottom-4 flex items-center gap-2 flex-wrap pr-4">

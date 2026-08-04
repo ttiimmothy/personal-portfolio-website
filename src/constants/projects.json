@@ -5,7 +5,7 @@
     "description": "TTC ETA Tracker is a real-time transit application that provides estimated arrival times (eta) for TTC buses and streetcars.",
     "originLink": "https://ttiimmothy.github.io/ttc-refactor",
     "githubLink": "https://github.com/ttiimmothy/ttc-refactor",
-    "stacks": ["react", "redux", "reactrouter"],
+    "stacks": ["react", "redux"],
     "stackLinks": {
       "react": "https://react.dev/",
       "redux": "https://redux-toolkit.js.org/",
@@ -16,13 +16,15 @@
     "backdropImage": "expense_splitter",
     "name": "Expense Splitter",
     "description": "Expense Splitter is a full-stack application for splitting expenses with friends and family. Built with React, Node.js, TypeScript, and PostgreSQL.",
-    "githubLink": "https://github.com/ttiimmothy/expense-splitter"
+    "githubLink": "https://github.com/ttiimmothy/expense-splitter",
+    "stacks": ["react", "vite", "tailwind", "zustand", "express", "prisma", "postgresql"]
   },
   {
     "backdropImage": "fitness_habit_tracker",
     "name": "Fitness Habit Tracker",
     "description": "Fitness Habit Tracker is a full-stack application for tracking fitness habits and building healthy routines. Built with Astro, React, FastAPI, and PostgreSQL.",
-    "githubLink": "https://github.com/ttiimmothy/fitness-habit-tracker"
+    "githubLink": "https://github.com/ttiimmothy/fitness-habit-tracker",
+    "stacks": ["react", "astro", "tailwind", "zustand", "python", "fastapi", "postgresql"]
   },
   {
     "backdropImage": "task_management_application",
@@ -43,7 +45,7 @@
     "description": "A single page web application to know about me. Stay tuned.",
     "originLink": "https://ttiimmothy.com",
     "githubLink": "https://github.com/ttiimmothy/personal-portfolio-website",
-    "stacks": ["react", "next", "tailwind"],
+    "stacks": ["react", "next.js", "tailwind", "three-fiber"],
     "stackLinks": {
       "react": "https://react.dev/",
       "next": "https://nextjs.org/",
@@ -55,7 +57,7 @@
     "name": "Openrice Canada",
     "description": "Openrice Canada is an application that introduces the closest restaurant that suits your needs.",
     "githubLink": "https://github.com/openrice-canada/openrice-canada-frontend",
-    "stacks": ["react", "tailwind", "redux", "reactrouter", "nestjs"],
+    "stacks": ["react", "tailwind", "redux", "nestjs", "postgresql", "supabase"],
     "stackLinks": {
       "react": "https://react.dev/",
       "tailwind": "https://tailwindcss.com/",

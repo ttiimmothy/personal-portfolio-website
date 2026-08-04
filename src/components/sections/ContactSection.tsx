@@ -161,7 +161,7 @@ const ContactSection: React.FC = () => {
                   href="https://linkedin.com/in/timothyurl/"
                   target="_blank"
                   rel="me noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-border hover:border-primary/50 transition-colors duration-200 hover:bg-primary/5"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-border hover:border-primary/10 transition-colors duration-200 hover:bg-primary/5"
                 >
                   <LinkedInLogo className="w-4 h-4 text-[hsl(var(--linkedin))]" />
                   LinkedIn
