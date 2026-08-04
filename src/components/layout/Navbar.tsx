@@ -1,17 +1,8 @@
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
-import {
-  IoLogoGithub,
-  IoLogoGitlab,
-  IoLogoLinkedin,
-  IoMail,
-} from "react-icons/io5";
-import { BiSolidFilePdf } from "react-icons/bi";
 import { Helmet } from "react-helmet";
-import { NavMobileMenuIcon } from "@/components/layout/navMobileMenu/NavMobileMenuIcon";
 import useOnClickOutside from "@/components/hooks/useOnClickOutside";
 import ThemeToggler from "../ThemeToggler";
-import { colors } from "@/components/color/default";
 import { cn } from "@/utils/classNames";
 
 const Navbar: React.FC = () => {
@@ -87,91 +78,10 @@ const Navbar: React.FC = () => {
             <NavButton id="contact" label="Contact" />
           </div>
           <div className="invisible lg:visible absolute right-0 flex items-center gap-2">
-            <Link
-              target="_blank"
-              href="https://github.com/ttiimmothy"
-              className="relative flex items-center p-1.5 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-md"
-            >
-              <IoLogoGithub size={28} className="dark:text-gray-50" />
-            </Link>
-            {/* <Link
-              target="_blank"
-              href="https://gitlab.com/ttiimmothy"
-              className="relative flex items-center p-1.5 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-md"
-            >
-              <IoLogoGitlab size={28} className="dark:text-gray-50" />
-            </Link>
-            <Link
-              target="_blank"
-              href="https://www.linkedin.com/in/timothyurl/"
-              className="relative flex items-center p-1.5 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-md"
-            >
-              <IoLogoLinkedin size={28} className="dark:text-gray-50" />
-            </Link>
-            <Link
-              target="_blank"
-              href="mailto:timothyemail805@gmail.com"
-              className="relative flex items-center p-1.5 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-md"
-            >
-              <IoMail size={28} className="dark:text-gray-50" />
-            </Link>
-            <Link
-              target="_blank"
-              href="/Timothy Resume.pdf"
-              className="relative flex items-center p-1.5 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-md"
-            >
-              <BiSolidFilePdf size={28} className="dark:text-gray-50" />
-            </Link> */}
             <ThemeToggler />
           </div>
         </div>
       </nav>
-      {/* <nav
-        className={cn(
-          "visible lg:invisible fixed top-0 left-0 w-full flex justify-center",
-          "bg-light-bg dark:bg-dark-bg",
-          "px-5 z-40",
-          `${scrolled && !showMobileMenu && "shadow-lg opacity-90"}`,
-          "bg-color-transition"
-        )}
-      >
-        <div className="relative w-[90vw] mx-auto py-4 flex items-center justify-between">
-          <div className="dark:text-white">
-            <NavButton id="home" label="Timothy" />
-          </div>
-          <div ref={wrapperRef}>
-            <NavMobileMenuIcon
-              toggleMenu={setShowMobileMenu}
-              menuOpen={showMobileMenu}
-            />
-            <div
-              className={cn(
-                "fixed top-0 right-0 h-screen w-aside flex justify-center items-center flex-col",
-                "bg-light-bg dark:bg-dark-bg",
-                "gap-4 z-50 shadow-aside-width",
-                `${showMobileMenu ? "visible translate-x-0" : "invisible translate-x-[100vw]"} navbar-menu-animation`
-              )}
-            >
-              <div className="absolute top-5 left-10">
-                <ThemeToggler />
-              </div>
-              <NavButton id="home" label="Home" />
-              <NavButton id="about" label="About" />
-              <NavButton id="experience" label="Experience" />
-              <NavButton id="projects" label="Projects" />
-              <NavButton id="contact" label="Contact" />
-              <Link
-                target="_blank"
-                href="/Timothy Resume.pdf"
-                className="flex relative items-center p-1.5 px-4 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-md"
-                rel="noopener noreferrer"
-              >
-                Resume
-              </Link>
-            </div>
-          </div>
-        </div>
-      </nav> */}
     </>
   );
 };

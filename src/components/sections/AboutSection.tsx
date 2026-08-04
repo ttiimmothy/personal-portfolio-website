@@ -51,12 +51,14 @@ const AboutSection: React.FC = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className="flex flex-col gap-3"
         >
-          <h1 className="text-4xl font-bold">Timothy Li</h1>
-          <p className="my-2  opacity-75 leading-[1.5]">
-            Hi, I&apos;m Timothy, a software engineer with a main focus on
-            building and maintaining complex web applications. I am legally
-            entitled to work in Canada, and currently seeking for any
-            opportunities available in Canada.
+          {/* <h1 className="text-4xl font-bold">Timothy Li</h1> */}
+          <p className="my-2 opacity-75 leading-[1.5]">
+            Hi, I&apos;m Timothy, a software engineer with experience building web and mobile applications across frontend, backend, and cloud technologies. 
+            I work primarily with React, TypeScript, Node.js, .NET, and React Native, with hands-on experience in AWS, Azure, GCP, and CI/CD.
+          </p>
+          <p className="my-2 opacity-75 leading-[1.5]">
+            I&apos;ve worked on projects ranging from e-commerce and enterprise applications to mobile products and AI-powered solutions. I enjoy solving complex problems, 
+            learning new technologies, and building reliable software that makes a real-world impact.
           </p>
           {skills.map((skill, index) => (
             <SkillSection
