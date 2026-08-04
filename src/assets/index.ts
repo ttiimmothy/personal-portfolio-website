@@ -7,7 +7,7 @@ import node_js from "./technology/node_js.png";
 import react from "./technology/react.png";
 import redux from "./technology/redux.png";
 import typescript from "./technology/typescript.png";
-import csharp from "./technology/csharp.svg";
+import csharp from "./technology/csharp.png";
 
 import hkust from "./company/hkust.png";
 import atkins from "./company/atkins.png";
