@@ -86,7 +86,7 @@
     ]
   },
   {
-    "title": "Solution Architect",
+    "title": "Software Developer",
     "company_name": "Computacenter",
     "company_url": "https://www.computacenter.com/",
     "icon": "computacenter",
@@ -94,7 +94,7 @@
     "date": "Feb 2025",
     "points": [
       "Took ownership of the CloudCheckr deliverable in the OECM project, coordinating between product owners, vendors and the client, ensuring on-time delivery and reducing project turnaround by 20%",
-      "Introduced and built LLM for the RFP responses, enhancing the bid winning rate by 10%"
+      "Built an AI-powered RFP response system that automated proposal generation using Claude for document extraction and context engineering, including role and persona configuration, contributing to a 20% increase in bid win rate"
     ]
   }
 ]

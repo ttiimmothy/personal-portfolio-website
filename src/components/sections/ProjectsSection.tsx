@@ -2,7 +2,7 @@ import SectionWrapper from "@/components/layout/SectionWrapper";
 import projects from "@/constants/projects.json";
 import { motion } from "framer-motion";
 import { fadeIn, textVariant, staggerContainer } from "@/components/utils/motions";
-import { styles as utilStyles } from "@/components/utils/styles";
+import { styles, styles as utilStyles } from "@/components/utils/styles";
 import { IoIosArrowUp, IoIosArrowDown } from "react-icons/io";
 import { useState } from "react";
 import ProjectCard from "../ProjectCard";
@@ -11,7 +11,14 @@ const ProjectsSection: React.FC = () => {
   const [showMoreProjects, setShowMoreProjects] = useState(false);
 
   return (
-    <div>
+    <motion.section
+      variants={staggerContainer()}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.25 }}
+      className={`${styles.sectionPadding} md:max-w-7xl md:mx-auto relative z-0 dark:text-slate-200 flex flex-col items-center justify-center`}
+      id="projects"
+    >
       <motion.div variants={textVariant()}>
         <p className={`${utilStyles.sectionSubText} text-center`}>
           Some Projects that I&apos;ve Built
@@ -85,8 +92,8 @@ const ProjectsSection: React.FC = () => {
           </motion.div>
         </motion.div>
       )}
-    </div>
+    </motion.section>
   );
 };
 
-export default SectionWrapper(ProjectsSection, "projects");
+export default ProjectsSection;

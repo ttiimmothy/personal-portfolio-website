@@ -8,7 +8,6 @@ import Head from "next/head";
 import { ThemeProvider } from "next-themes";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import { colors } from "@/components/color/default";
 import { cn } from "@/utils/classNames";
 
 export default function App({ Component, pageProps }: AppProps) {

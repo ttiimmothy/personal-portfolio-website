@@ -16,6 +16,26 @@
   --button-box-after-active: bottom 0.1s ease-out,
     transform 0.22s cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
   --gray: #5f6369;
+  --primary: 187 74% 28%;
+  --primary-foreground: 0 0% 100%;
+  --linkedin: 210 91% 40%;       /* #0A66C2 */
+  --border: 240 6% 85%;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not(.light) {
+    --primary: 187 86% 53%;
+    --primary-foreground: 240 10% 4%;
+    --linkedin: 210 88% 71%;
+    --border: 240 4% 20%;
+  }
+}
+
+@layer utilities {
+  .contact-bg-primary { background-color: hsl(var(--primary)); }
+  .text-primary-foreground { color: hsl(var(--primary-foreground)); }
+  .border-border { border-color: hsl(var(--border)); }
+  .border-primary\/50 { border-color: hsl(var(--primary) / 0.5); }
 }
 
 * {

@@ -94,7 +94,7 @@ const Navbar: React.FC = () => {
             >
               <IoLogoGithub size={28} className="dark:text-gray-50" />
             </Link>
-            <Link
+            {/* <Link
               target="_blank"
               href="https://gitlab.com/ttiimmothy"
               className="relative flex items-center p-1.5 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-md"
@@ -121,12 +121,12 @@ const Navbar: React.FC = () => {
               className="relative flex items-center p-1.5 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-md"
             >
               <BiSolidFilePdf size={28} className="dark:text-gray-50" />
-            </Link>
+            </Link> */}
             <ThemeToggler />
           </div>
         </div>
       </nav>
-      <nav
+      {/* <nav
         className={cn(
           "visible lg:invisible fixed top-0 left-0 w-full flex justify-center",
           "bg-light-bg dark:bg-dark-bg",
@@ -171,7 +171,7 @@ const Navbar: React.FC = () => {
             </div>
           </div>
         </div>
-      </nav>
+      </nav> */}
     </>
   );
 };

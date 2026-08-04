@@ -16,14 +16,12 @@
     "backdropImage": "expense_splitter",
     "name": "Expense Splitter",
     "description": "Expense Splitter is a full-stack application for splitting expenses with friends and family. Built with React, Node.js, TypeScript, and PostgreSQL.",
-    "originLink": "https://expense-splitter-jade.vercel.app/",
     "githubLink": "https://github.com/ttiimmothy/expense-splitter"
   },
   {
     "backdropImage": "fitness_habit_tracker",
     "name": "Fitness Habit Tracker",
     "description": "Fitness Habit Tracker is a full-stack application for tracking fitness habits and building healthy routines. Built with Astro, React, FastAPI, and PostgreSQL.",
-    "originLink": "https://fitness-habit-tracker.vercel.app/",
     "githubLink": "https://github.com/ttiimmothy/fitness-habit-tracker"
   },
   {

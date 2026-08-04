@@ -37,7 +37,7 @@ const Layout: React.FC<{
         <>
           <Navbar />
           {children}
-          <Footer />
+          {/* <Footer /> */}
         </>
       )}
     </div>
