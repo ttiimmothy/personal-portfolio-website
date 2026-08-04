@@ -11,17 +11,17 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v6
-      # - name: Setup Node.js environment
-      #   uses: actions/setup-node@v4.0.2
-      - name: Install bun
-        uses: oven-sh/setup-bun@v2
-      # - name: CI, Linter and Build
-      #   run: |
-      #     npm ci --legacy-peer-deps
-      #     npm run lint
-      #     npm run build
-      - name: Install, Linter and Build
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v7.0.0
+      # - name: Install bun
+      #   uses: oven-sh/setup-bun@v2
+      - name: CI, Linter and Build
         run: |
-          bun install
-          bun run lint
-          bun run build
+          npm ci --legacy-peer-deps
+          npm run lint
+          npm run build
+      # - name: Install, Linter and Build
+      #   run: |
+      #     bun install
+      #     bun run lint
+      #     bun run build
