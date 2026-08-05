@@ -15,14 +15,14 @@
   {
     "backdropImage": "expense_splitter",
     "name": "Expense Splitter",
-    "description": "Expense Splitter is a full-stack application for splitting expenses with friends and family. Built with React, Node.js, TypeScript, and PostgreSQL.",
+    "description": "Expense Splitter is a full-stack application for splitting expenses with friends and family.",
     "githubLink": "https://github.com/ttiimmothy/expense-splitter",
     "stacks": ["react", "vite", "tailwind", "zustand", "express", "prisma", "postgresql"]
   },
   {
     "backdropImage": "fitness_habit_tracker",
     "name": "Fitness Habit Tracker",
-    "description": "Fitness Habit Tracker is a full-stack application for tracking fitness habits and building healthy routines. Built with Astro, React, FastAPI, and PostgreSQL.",
+    "description": "Fitness Habit Tracker is a full-stack application for tracking fitness habits and building healthy routines.",
     "githubLink": "https://github.com/ttiimmothy/fitness-habit-tracker",
     "stacks": ["react", "astro", "tailwind", "zustand", "python", "fastapi", "postgresql"]
   },
