@@ -1,9 +1,10 @@
+"use client";
+
 import { useState, useEffect } from "react";
-import { Helmet } from "react-helmet";
+// import { Helmet } from "react-helmet";
 import anime from "animejs";
 import IconLoaderSvg from "@/components/icons/IconLoaderSvg";
 import styles from "./pageLoader.module.css";
-import { colors } from "@/components/color/default";
 import { cn } from "@/utils/classNames";
 
 const PageLoader: React.FC<{
@@ -51,10 +52,10 @@ const PageLoader: React.FC<{
       className={cn(
         "loader flex justify-center items-center fix inset-0 w-screen h-screen",
         "bg-light-loading-bg dark:bg-dark-loading-bg",
-        "z-99"
+        "z-99",
+        "body-hidden"
       )}
     >
-      <Helmet bodyAttributes={{ class: "body-hidden" }} />
       <div
         className={
           isMounted ? styles["logo-wrapper-mounted"] : styles["logo-wrapper"]

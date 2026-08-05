@@ -1,3 +1,5 @@
+"use client";
+
 import skills from "@/constants/skills.json";
 import SectionWrapper from "@/components/layout/SectionWrapper";
 import { motion } from "framer-motion";

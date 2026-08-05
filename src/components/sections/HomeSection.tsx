@@ -1,3 +1,5 @@
+"use client";
+
 import { motion } from "framer-motion";
 import Typewriter from "typewriter-effect";
 import roles from "@/constants/roles.json";
