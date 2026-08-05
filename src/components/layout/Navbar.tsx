@@ -1,6 +1,7 @@
+"use client";
+
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
-import { Helmet } from "react-helmet";
 import useOnClickOutside from "@/components/hooks/useOnClickOutside";
 import ThemeToggler from "../ThemeToggler";
 import { cn } from "@/utils/classNames";
@@ -35,6 +36,14 @@ const Navbar: React.FC = () => {
     };
   }, []);
 
+  useEffect(() => {
+    document.body.classList.toggle("blurring", showMobileMenu);
+  
+    return () => {
+      document.body.classList.remove("blurring");
+    };
+  }, [showMobileMenu]);
+
   useOnClickOutside(wrapperRef, () => setShowMobileMenu(false));
 
   const NavButton = ({ id, label }: { id: string; label: string }) => {
@@ -57,9 +66,9 @@ const Navbar: React.FC = () => {
 
   return (
     <>
-      <Helmet>
+      {/* <Helmet>
         <body className={showMobileMenu ? "blurring" : ""} />
-      </Helmet>
+      </Helmet> */}
       <nav
         className={cn(
           "invisible lg:visible fixed top-0 left-0 w-full flex justify-center",

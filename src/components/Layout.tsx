@@ -1,13 +1,13 @@
+"use client";
+
 import React, { useEffect, useState } from "react";
 import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
 import PageLoader from "./pageLoader/PageLoader";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 
 const Layout: React.FC<{
   children: React.ReactNode;
-  location: any;
-}> = ({ children, location }) => {
+}> = ({ children }) => {
   const [isLoading, setIsLoading] = useState(true);
   const router = useRouter();
 
@@ -16,8 +16,8 @@ const Layout: React.FC<{
       return;
     }
 
-    if (location[1] === "#") {
-      const id = location.substring(2); // location.hash without the '#'
+    if (window.location.hash) {
+      const id = window.location.hash.substring(1);
       setTimeout(() => {
         const e = document.getElementById(id);
         if (e) {
@@ -27,7 +27,7 @@ const Layout: React.FC<{
         }
       }, 0);
     }
-  }, [isLoading, location, router]);
+  }, [isLoading, router]);
 
   return (
     <div>
@@ -37,7 +37,6 @@ const Layout: React.FC<{
         <>
           <Navbar />
           {children}
-          {/* <Footer /> */}
         </>
       )}
     </div>

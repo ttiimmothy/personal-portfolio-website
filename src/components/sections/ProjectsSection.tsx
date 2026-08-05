@@ -1,4 +1,5 @@
-import SectionWrapper from "@/components/layout/SectionWrapper";
+"use client";
+
 import projects from "@/constants/projects.json";
 import { motion } from "framer-motion";
 import { fadeIn, textVariant, staggerContainer } from "@/components/utils/motions";

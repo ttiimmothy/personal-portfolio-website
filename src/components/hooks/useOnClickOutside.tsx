@@ -1,6 +1,8 @@
-import { MutableRefObject, useEffect } from "react";
+"use client";
 
-const useOnClickOutside = (ref: MutableRefObject<any>, handler: any) => {
+import { RefObject, useEffect } from "react";
+
+const useOnClickOutside = (ref: RefObject<any>, handler: any) => {
   useEffect(() => {
     const listener = (event: any) => {
       if (!ref.current || ref.current.contains(event.target)) {
