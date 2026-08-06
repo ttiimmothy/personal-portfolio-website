@@ -6,6 +6,7 @@ import roles from "@/constants/roles.json";
 import Link from "next/link";
 import {BsLinkedin} from "react-icons/bs";
 import {IoLogoGithub} from "react-icons/io5";
+import {ArrowDown} from "lucide-react";
 
 const fadeUp = {
   initial: { opacity: 0, y: 16 },
@@ -14,13 +15,13 @@ const fadeUp = {
 
 const HomeSection: React.FC = () => {
   return (
-    <section id="home" className="relative h-screen flex items-center">
+    <section id="home" className="h-screen flex items-center grow">
       <div className="flex flex-col lg:flex-row justify-center items-center w-full">
         <div className="flex flex-col items-center gap-4 text-center">
           <p className="text-balance text-5xl home-section-sm:text-6xl dark:text-white tracking-tight whitespace-nowrap">
           Software Engineer building <br/> production-ready products <br/> with AI
           </p>
-          <div className="dark:text-gray-600 tracking-wider flex flex-col gap-3">
+          <div className="dark:text-gray-600 tracking-wider flex flex-col gap-3 text-gray-400">
             <div className="flex gap-2 sm:text-lg">
               I&apos;m Timothy, a
               <div className="text-[#bbccdd]">
@@ -50,26 +51,17 @@ const HomeSection: React.FC = () => {
             <IoLogoGithub className="text-gray-900 dark:text-gray-50" />
           </a>
           </motion.div>
+          <div className="mt-10 w-full flex justify-center text-gray-400 dark:text-gray-600">
+            <Link href="/#about" className="flex items-center gap-2">
+              scroll
+              <button
+                type="button"
+              >
+                <ArrowDown size={14} className="animate-bounce" />
+              </button>
+            </Link>
+          </div>
         </div>
-      </div>
-      <div className="absolute bottom-20 lg:bottom-28 mt-40 w-full flex justify-center">
-        <Link href="/#about">
-          <button
-            type="button"
-            className="flex justify-center w-8 h-16 border-2 border-[#808080] dark:border-white rounded-full p-1"
-          >
-            <motion.div
-              animate={{ y: [0, 40], opacity: [1, 0] }}
-              transition={{
-                ease: "easeIn",
-                repeat: Infinity,
-                duration: 1,
-                repeatDelay: 0.5,
-              }}
-              className="w-4 h-4 bg-secondary dark:bg-white rounded-full"
-            />
-          </button>
-        </Link>
       </div>
     </section>
   );

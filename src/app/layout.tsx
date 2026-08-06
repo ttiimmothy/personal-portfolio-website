@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./index.css";
 import "./globals.css";
 import "./projectsSection.css";
+import "highlight.js/styles/github-dark.css";
 import "@/vertical-timeline-component/style.min.css";
 import Providers from "./providers";
 import Layout from "@/components/Layout";

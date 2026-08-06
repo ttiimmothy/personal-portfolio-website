@@ -1,5 +1,20 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+import nextMdx from "@next/mdx";
+import remarkFrontmatter from "remark-frontmatter";
+
+function removeFrontmatter() {
+  return (tree) => {
+    tree.children = tree.children.filter((node) => node.type !== "yaml");
+  };
+}
+
+const withMdx = nextMdx({
+  extension: /\.mdx?$/,
+  options: {
+    rehypePlugins: ["remark-frontmatter", "rehype-highlight"],
+  },
+});
+
+const nextConfig = withMdx({
   async headers() {
     return [
       {
@@ -14,6 +29,7 @@ const nextConfig = {
       },
     ];
   },
-};
+  pageExtensions: ['md', 'mdx', 'tsx', 'ts', 'jsx', 'js'],
+});
 
-module.exports = nextConfig;
+export default nextConfig

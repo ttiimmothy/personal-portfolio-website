@@ -52,7 +52,7 @@ const Navbar: React.FC = () => {
     };
 
     return (
-      <Link href={id === "home" ? "/" : `/#${id}`}>
+      <Link href={id === "home" ? "/" : id === "blog" ? "/posts" : `/#${id}`}>
         <button
           type="button"
           className="text-md p-1.5 px-4 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-md"
@@ -66,9 +66,6 @@ const Navbar: React.FC = () => {
 
   return (
     <>
-      {/* <Helmet>
-        <body className={showMobileMenu ? "blurring" : ""} />
-      </Helmet> */}
       <nav
         className={cn(
           "invisible lg:visible fixed top-0 left-0 w-full flex justify-center",
@@ -79,13 +76,14 @@ const Navbar: React.FC = () => {
         )}
       >
         <div className="relative w-[1024px] mx-auto py-4 flex items-center justify-between">
-          <div className="invisible lg:visible group group/list flex dark:text-white">
+          <nav className="invisible lg:visible group group/list flex dark:text-white">
             <NavButton id="home" label="Home" />
             <NavButton id="about" label="About" />
             <NavButton id="experience" label="Experience" />
             <NavButton id="projects" label="Projects" />
             <NavButton id="contact" label="Contact" />
-          </div>
+            <NavButton id="blog" label="Blog" />
+          </nav>
           <div className="invisible lg:visible absolute right-0 flex items-center gap-2">
             <ThemeToggler />
           </div>

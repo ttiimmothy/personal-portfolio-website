@@ -7,7 +7,7 @@ function ErrorPage() {
     <ThemeProvider attribute="class" defaultTheme="dark">
       <div className="w-full h-[90vh] flex flex-col gap-3 justify-center items-center">
         <Image
-          src={"error.svg"}
+          src={"/error.svg"}
           alt="not found error"
           width={700}
           height={600}
