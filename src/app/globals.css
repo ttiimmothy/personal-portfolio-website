@@ -29,8 +29,15 @@
     --linkedin: 210 88% 71%;
     --border: 240 4% 20%;
   }
-  :root:not(.light) .post-content code {
+  
+  :root:not(.light) .post-content code.hljs {
     background-color: #0E0E0E;
+  }
+
+  :root:not(.light) .post-content :not(pre) > code {
+    padding: 0.15rem;
+    border-radius: 0.1rem;
+    background-color: #202020;
   }
 }
 
@@ -52,11 +59,22 @@
   background: transparent;
 }
 
-/* .post-content pre code {
+.post-content pre code {
   display: block;
   padding: 1.25rem;
   border-radius: 0.5rem;
-} */
+}
+
+.post-content :not(pre) > code {
+  padding: 0.15rem;
+  border-radius: 0.1rem;
+  background-color: #eaeaea;
+}
+
+.post-content :not(pre) > code::before,
+.post-content :not(pre) > code::after {
+  content: none;
+}
 
 @keyframes mdx-content-enter {
   from {
@@ -92,4 +110,59 @@
     opacity: 1;
     animation: none;
   }
+}
+
+:root.light .post-content code.hljs {
+  background: #ebebeb;
+  color: #24292e;
+}
+
+:root.light .post-content .hljs-comment,
+:root.light .post-content .hljs-quote {
+  color: #6a737d;
+}
+
+:root.light .post-content .hljs-keyword,
+:root.light .post-content .hljs-selector-tag,
+:root.light .post-content .hljs-subst {
+  color: #d73a49;
+}
+
+:root.light .post-content .hljs-string,
+:root.light .post-content .hljs-doctag {
+  color: #032f62;
+}
+
+:root.light .post-content .hljs-title,
+:root.light .post-content .hljs-section,
+:root.light .post-content .hljs-selector-id {
+  color: #6f42c1;
+}
+
+:root.light .post-content .hljs-variable,
+:root.light .post-content .hljs-template-variable,
+:root.light .post-content .hljs-attr,
+:root.light .post-content .hljs-attribute {
+  color: #005cc5;
+}
+
+:root.light .post-content .hljs-number,
+:root.light .post-content .hljs-literal,
+:root.light .post-content .hljs-type,
+:root.light .post-content .hljs-symbol,
+:root.light .post-content .hljs-bullet,
+:root.light .post-content .hljs-meta,
+:root.light .post-content .hljs-selector-attr,
+:root.light .post-content .hljs-selector-pseudo,
+:root.light .post-content .hljs-link {
+  color: #005cc5;
+}
+
+:root.light .post-content .hljs-built_in,
+:root.light .post-content .hljs-deletion {
+  color: #a71d5d;
+}
+
+:root.light .post-content .hljs-addition {
+  color: #22863a;
 }
