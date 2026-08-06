@@ -10,12 +10,14 @@ I wanted a clipboard history tool that stayed out of the way, consumed almost no
 
 The project consists of a small background daemon that watches the macOS clipboard and stores copied text into SQLite. A future UI can simply read from the same database.
 
+![clipboard history](/gif/clipboard-history.gif)
+
 ## Project structure
 
 The project is a Swift Package with a simple structure:
 
 ```text
-clipboard-history/
+clipboard_history/
 ├── Package.swift
 ├── Sources/
 │   └── clipboard_history/
@@ -166,3 +168,7 @@ Using AppKit, SQLite, and LaunchAgents made it possible to build a lightweight c
 Sometimes the best side projects are the ones you end up using every day. Building your own tools not only teaches platform-specific APIs, but also gives you complete control over how they behave.
 
 Thanks for reading.
+
+### Reference
+
+[https://github.com/ttiimmothy/clipboard-history](https://github.com/ttiimmothy/clipboard-history)

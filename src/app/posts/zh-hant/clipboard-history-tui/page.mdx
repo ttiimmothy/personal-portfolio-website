@@ -10,12 +10,14 @@ description: 我如何使用 Swift、AppKit、SQLite 和 LaunchAgents 為 macOS 
 
 此專案由一個小型背景 daemon 組成，它會監看 macOS 剪貼簿並將複製的文字儲存到 SQLite。未來的 UI 只要讀取同一個資料庫即可。
 
+![clipboard history](/gif/clipboard-history.gif)
+
 ## 專案結構
 
 此專案是一個結構簡單的 Swift Package：
 
 ```text
-clipboard-history/
+clipboard_history/
 ├── Package.swift
 ├── Sources/
 │   └── clipboard_history/
@@ -144,7 +146,7 @@ macOS LaunchAgents 讓這件事變得很直接。
 
 ## 未來改善方向
 
-這個 daemon 有意維持精簡，但仍有許多可改善之處：
+這個 daemon 有意維持精簡，但仍有許多可改善之處：t
 
 - 搜尋剪貼簿歷史。
 - 釘選常用片段。
@@ -166,3 +168,7 @@ AppKit、SQLite 和 LaunchAgents 讓我能建立一個輕量的剪貼簿管理�
 有時最好的 side project，就是你最後每天都會使用的專案。打造自己的工具不僅能學習平台專屬 API，也能讓你完全掌控它們的行為。
 
 感謝閱讀。
+
+### 參考資料
+
+[https://github.com/ttiimmothy/clipboard-history](https://github.com/ttiimmothy/clipboard-history)

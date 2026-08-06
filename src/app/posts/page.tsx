@@ -7,6 +7,7 @@ type Post = {
   title: string;
   href: string;
   date?: Date;
+  duration?: string;
 };
 
 function getPosts(): Post[] {
@@ -25,6 +26,7 @@ function getPosts(): Post[] {
         title: String(data.title ?? slug),
         href: `/posts/${slug}`,
         date: date && !Number.isNaN(date.getTime()) ? date : undefined,
+        duration: data.duration ? String(data.duration) : undefined,
       };
     })
     .sort((a, b) => (b.date?.getTime() ?? 0) - (a.date?.getTime() ?? 0));
@@ -68,10 +70,20 @@ export default function PostsPage() {
                 <article key={post.href}>
                   <Link
                     href={post.href}
-                    className="font-light flex items-center gap-4 py-3 text-md text-gray-500 transition hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-300"
+                    className="flex w-full items-center gap-4 py-3 text-md transition opacity-70 hover:opacity-100"
                   >
-                    <span>{post.title}</span>
-                    <span className="text-xs">en / 繁體中文</span>
+                    <span className="font-medium text-gray-800 dark:text-gray-200">
+                      {post.title}
+                    </span>
+                    <span className="text-xs text-gray-400 dark:text-gray-500">
+                      {post.date && new Intl.DateTimeFormat("en-US", {
+                        year: "numeric",
+                        month: "short",
+                        day: "numeric",
+                      }).format(post.date)}
+                      {post.duration && ` · ${post.duration}`}
+                      {" · en / 繁體中文"}
+                    </span>
                   </Link>
                 </article>
               ))}
