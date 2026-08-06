@@ -7,7 +7,13 @@ import type { PostMetadata } from "./postMetadata";
 
 type PostHeaderProps = PostMetadata;
 
-export default function PostHeader() {
+type PostHeaderComponentProps = {
+  onMetadataLoaded: () => void;
+};
+
+export default function PostHeader({
+  onMetadataLoaded,
+}: PostHeaderComponentProps) {
   const pathname = usePathname();
   const [metadata, setMetadata] = useState<PostHeaderProps | null>(null);
   const segments = pathname.split("/").filter(Boolean);
@@ -23,9 +29,15 @@ export default function PostHeader() {
 
     fetch(`/api/posts/${slug}?lang=${language}`)
       .then((response) => (response.ok ? response.json() : null))
-      .then((data: PostHeaderProps | null) => setMetadata(data))
-      .catch(() => setMetadata(null));
-  }, [pathname, isTraditionalChinese, slug]);
+      .then((data: PostHeaderProps | null) => {
+        setMetadata(data);
+        onMetadataLoaded();
+      })
+      .catch(() => {
+        setMetadata(null);
+        onMetadataLoaded();
+      });
+  }, [pathname, isTraditionalChinese, slug, onMetadataLoaded]);
 
   if (!metadata) {
     return null;
