@@ -25,7 +25,7 @@ export default function PostHeader() {
       .then((response) => (response.ok ? response.json() : null))
       .then((data: PostHeaderProps | null) => setMetadata(data))
       .catch(() => setMetadata(null));
-  }, [pathname]);
+  }, [pathname, isTraditionalChinese, slug]);
 
   if (!metadata) {
     return null;
