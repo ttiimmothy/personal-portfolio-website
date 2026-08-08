@@ -29,7 +29,7 @@ export function getPostMetadata(
   slug: string,
   language: PostLanguage = "en"
 ): PostMetadata {
-  const filePath = path.join(getPostDirectory(slug, language), "page.mdx");
+  const filePath = path.join(getPostDirectory(slug, language), "page.md");
   const source = fs.readFileSync(filePath, "utf8");
   const { data } = matter(source);
 

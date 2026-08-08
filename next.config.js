@@ -8,7 +8,7 @@ function removeFrontmatter() {
 }
 
 const withMdx = nextMdx({
-  extension: /\.mdx?$/,
+  extension: /\.md?$/,
   options: {
     rehypePlugins: ["remark-frontmatter", "rehype-highlight"],
   },

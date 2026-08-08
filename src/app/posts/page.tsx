@@ -18,7 +18,7 @@ function getPosts(): Post[] {
     .filter((entry) => entry.isDirectory() && entry.name !== "zh-hant")
     .map((entry) => {
       const slug = entry.name;
-      const filePath = path.join(postsDirectory, slug, "page.mdx");
+      const filePath = path.join(postsDirectory, slug, "page.md");
       const { data } = matter(fs.readFileSync(filePath, "utf8"));
       const date = data.date ? new Date(data.date) : undefined;
 
