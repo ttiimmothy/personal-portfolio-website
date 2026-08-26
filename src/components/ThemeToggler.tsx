@@ -16,8 +16,8 @@ function ThemeToggler() {
       className="relative p-2 hover:bg-gray-200 dark:hover:bg-gray-600 rounded-md inline-flex items-center"
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
     >
-      {theme === "light" && <IoSunnyOutline size={20} />}
-      {theme === "dark" && <IoMoonOutline size={20} color="#adadad" />}
+      {theme === "light" && <IoMoonOutline size={20} />}
+      {theme === "dark" && <IoSunnyOutline size={20} color="#adadad" />}
     </button>
   ) : (
     <></>
