@@ -23,7 +23,7 @@ const nextConfig = withMdx({
           {
             key: "Content-Security-Policy",
             value:
-              "connect-src 'self' vitals.vercel-insights.com https://vercel.live https://api.emailjs.com",
+              "connect-src 'self' vitals.vercel-insights.com https://vercel.live https://api.emailjs.com https://www.google-analytics.com https://www.google.com",
           },
         ],
       },
