@@ -54,7 +54,6 @@ export default function PostsPage() {
       <header className="mb-12">
         <h2 className="mb-3 text-4xl uppercase">Blog</h2>
       </header>
-
       <div className="space-y-10">
         {years.map((year) => (
           <section key={year} aria-labelledby={`posts-${year}`}>
@@ -64,7 +63,6 @@ export default function PostsPage() {
             >
               {year}
             </h3>
-
             <div>
               {groups[year].map((post) => (
                 <article key={post.href}>

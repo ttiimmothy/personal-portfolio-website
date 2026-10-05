@@ -3,7 +3,7 @@
 import { useCallback, useState } from "react";
 import type { ReactNode } from "react";
 import AnimatedMDXContent from "./AnimatedMDXContent";
-import PostFooter from "./PostFooter";
+// import PostFooter from "./PostFooter";
 import PostHeader from "./PostHeader";
 
 export default function PostLayout({ children }: { children: ReactNode }) {
@@ -18,7 +18,7 @@ export default function PostLayout({ children }: { children: ReactNode }) {
     >
       <PostHeader onMetadataLoaded={handleMetadataLoaded} />
       <AnimatedMDXContent>{children}</AnimatedMDXContent>
-      <PostFooter />
+      {/* <PostFooter /> */}
     </article>
   );
 }
